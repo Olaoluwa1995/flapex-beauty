@@ -10,12 +10,14 @@ import {
 	Text,
 } from "@chakra-ui/react";
 import ReactPlayer from "react-player/youtube";
-
-import BannerImage from "./assets/images/dubai-banner.jpeg";
 import { CSSReset, ChakraProvider, theme } from "@chakra-ui/react";
 import { customTheme } from "./styles/theme";
 import { RiShareForwardFill } from "react-icons/ri";
 import { FaHandPointRight } from "react-icons/fa";
+import { MdEmail, MdAddLocation } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+
+import BannerImage from "./assets/images/dubai-banner.jpeg";
 import Covid19Update from "./Covid-19-Update";
 import { visaOptions } from "./VisaOption-data";
 import VisaOption from "./VisaOption";
@@ -256,20 +258,52 @@ const App = () => {
 			</Flex>
 
 			<Flex
+				minH="10rem"
+				px="10%"
+				flexDir="column"
+				textAlign="center"
+				w="100%"
+				pt={{ base: "2rem", sm: "3rem", md: "4rem" }}>
+				<Text fontSize="1.8rem" fontWeight="bold" color="red">
+					Contact Us
+				</Text>
+				<Flex flexDir="column" align="center" color="grey" pt={{base: "1rem", md: "2rem"}}>
+					<Flex fontSize={{ base: "0.9rem", sm: "1rem", md: "1.2rem"}}>
+						<Icon fontSize={{base: "xl", md: "2xl"}} mr="0.7rem" mt="3px" as={FaPhoneAlt} />
+						<Text>+2348188885290, +2348094266759</Text>
+					</Flex>
+					<Flex fontSize={{ base: "0.9rem", sm: "1rem", md: "1.2rem"}} mt="1rem">
+						<Icon fontSize={{base: "xl", md: "2xl"}} mr="0.7rem" mt="3px" as={MdEmail} />
+						<Text>info@sunbifly.com</Text>
+					</Flex>
+					<Flex fontSize={{ base: "0.9rem", sm: "1rem", md: "1.2rem"}} mt="1rem">
+						<Icon fontSize={{base: "xl", md: "2xl"}} mr="0.1rem" mt="3px" as={MdAddLocation} />
+						<Text>
+							Suite A5, Aderoke Plaza, Dopemu Underbridge, Akowonjo Roundabout,
+							Lagos, Nigeria.
+						</Text>
+					</Flex>
+				</Flex>
+				<Box
+					pt={{ base: "2rem", sm: "3rem", md: "4rem" }}
+					mx={{ base: "10%", md: "20%" }}
+					borderBottom="2px solid #b9b9b9"
+				/>
+			</Flex>
+
+			<Flex
 				minH="25rem"
 				mx="10%"
 				flexDir={{ base: "column", md: "row" }}
 				w="100%"
-				py={{base: "2rem", sm: "3rem", md: "4rem"}}>
+				py={{ base: "2rem", sm: "3rem", md: "4rem" }}>
 				<Flex
 					flexDir="column"
 					w={{ base: "80%", md: "35%" }}
 					fontSize="0.8rem"
 					h={{ base: "20rem", sm: "18rem", md: "unset" }}
 					pr="3%">
-					<Text fontSize="1.8rem">
-						SRK's Personal Invitation to Dubai
-					</Text>
+					<Text fontSize="1.8rem">SRK's Personal Invitation to Dubai</Text>
 					<Flex flexDir="column" color="grey" justify="space-evenly" h="100%">
 						<Text>#BeMyGuest</Text>
 						<Text>
@@ -300,26 +334,56 @@ const App = () => {
 					/>
 				</Flex>
 			</Flex>
-			
+
 			<Flex flexDir="column" bgColor="#f9f9f9" w="100%" minH="14rem">
 				<Flex flexDir="column" w="80%" align="center" mx="10%" my="2rem">
-					<Text fontSize="1.8rem" fontWeight="bold" color="red">WHY APPLY THROUGH DVPC?</Text>
+					<Text fontSize="1.8rem" fontWeight="bold" color="red">
+						WHY APPLY THROUGH DVPC?
+					</Text>
 					<Flex flexDir={{ base: "column", md: "row" }} pt="1rem">
-						<Text py={{ base: "1rem", md: "none" }} px={{ base: "none", md: "5%"}} textAlign="center" fontWeight="bold" borderRight={{ base: "none", md: "1px solid red" }} borderBottom={{ base: "1px solid red", md: "none" }}>
-						Integration with Emirates portal for quick online application
+						<Text
+							py={{ base: "1rem", md: "none" }}
+							px={{ base: "none", md: "5%" }}
+							textAlign="center"
+							fontWeight="bold"
+							borderRight={{ base: "none", md: "1px solid red" }}
+							borderBottom={{ base: "1px solid red", md: "none" }}>
+							Integration with Emirates portal for quick online application
 						</Text>
-						<Text py={{ base: "1rem", md: "none" }} px={{ base: "none", md: "5%"}} textAlign="center" fontWeight="bold" borderRight={{ base: "none", md: "1px solid red" }} borderBottom={{ base: "1px solid red", md: "none" }}>
-						Trusted by Emirates and the Government of Dubai
+						<Text
+							py={{ base: "1rem", md: "none" }}
+							px={{ base: "none", md: "5%" }}
+							textAlign="center"
+							fontWeight="bold"
+							borderRight={{ base: "none", md: "1px solid red" }}
+							borderBottom={{ base: "1px solid red", md: "none" }}>
+							Trusted by Emirates and the Government of Dubai
 						</Text>
-						<Text py={{ base: "1rem", md: "none" }} px={{ base: "none", md: "5%"}} textAlign="center" fontWeight="bold">
-						End-to-End support for a seamless application process
+						<Text
+							py={{ base: "1rem", md: "none" }}
+							px={{ base: "none", md: "5%" }}
+							textAlign="center"
+							fontWeight="bold">
+							End-to-End support for a seamless application process
 						</Text>
 					</Flex>
 				</Flex>
-				<Text fontSize="0.7rem" px="1rem" textAlign={{ base: "center", md: "start" }}>* This service is exclusively applicable for Emirates and Fly Dubai passengers only</Text>
+				<Text
+					fontSize="0.7rem"
+					px="1rem"
+					textAlign={{ base: "center", md: "start" }}>
+					* This service is exclusively applicable for Emirates and Fly Dubai
+					passengers only
+				</Text>
 			</Flex>
-			<Text w="100%" textAlign="center" py="0.5rem" bgColor="#00305d" color="white" fontSize={{ base: "0.7rem", md: "0.9rem" }}>
-			© VFS Global 2019. All Rights Reserved
+			<Text
+				w="100%"
+				textAlign="center"
+				py="0.5rem"
+				bgColor="#00305d"
+				color="white"
+				fontSize={{ base: "0.7rem", md: "0.9rem" }}>
+				© VFS Global 2019. All Rights Reserved
 			</Text>
 		</ChakraProvider>
 	);
