@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Icon, Text } from "@chakra-ui/react";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { Option } from "./VisaOption-data";
+import { COLORS } from "./styles/theme";
 
 type VisaOptionProps = {
 	option: Option;
@@ -10,7 +11,7 @@ type VisaOptionProps = {
 const VisaOption: React.FC<VisaOptionProps> = ({ option }) => {
 	return (
 		<Flex
-			color="red"
+			color={`${COLORS.PRIMARY_COLOR}`}
 			justify="center"
 			w={{ base: "100%", md: "25%" }}
 			h="100%"

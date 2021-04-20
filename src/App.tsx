@@ -14,38 +14,98 @@ import { CSSReset, ChakraProvider, theme } from "@chakra-ui/react";
 import { customTheme } from "./styles/theme";
 import { RiShareForwardFill } from "react-icons/ri";
 import { FaHandPointRight } from "react-icons/fa";
-import { MdEmail, MdAddLocation } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
-import BannerImage from "./assets/images/dubai-banner.jpeg";
 import Covid19Update from "./Covid-19-Update";
 import { visaOptions } from "./VisaOption-data";
 import VisaOption from "./VisaOption";
+import { COLORS } from "./styles/theme";
 
 const App = () => {
 	return (
 		<ChakraProvider theme={{ ...theme, ...customTheme }}>
 			<CSSReset />
-			<Container
-				px="15px"
-				d="flex"
-				justifyContent="center"
-				maxW={{ base: "300px", md: "500px", lg: "600px" }}>
-				<Box textAlign="center" py="20px" w={{ base: "90%", md: "60%" }}>
+
+			<Container px="15px" d="flex" justifyContent="center" maxW="800px">
+				<Flex
+					justify="center"
+					align="center"
+					py="20px"
+					w={{ base: "80%", md: "60%" }}>
+					<Text
+						bgColor="#c60c30"
+						p="0.5rem"
+						color="white"
+						fontSize="1.2rem"
+						fontStyle="italic"
+						fontWeight="bold">
+						Sunblify
+					</Text>
+					<Text
+						borderX="2px solid grey"
+						fontWeight="bold"
+						mx="1rem"
+						px="0.5rem"
+						fontSize={{ base: "1rem", md: "1.2rem" }}>
+						Dubai Visa Processing
+					</Text>
 					<Image
-						w="100%"
-						src="https://www.dubaivisa.net/images/dvpc-logo.png"
+						h="3rem"
+						src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emirates_logo.svg"
 						alt="header"
 					/>
-				</Box>
+				</Flex>
 			</Container>
-			<Image w="100%" src={BannerImage} alt="banner" />
+			<Flex
+				display={{ base: "none", md: "flex" }}
+				fontWeight="bold"
+				fontSize={{ base: "0", md: "0.8rem", lg: "0.9rem", xl: "1.1rem" }}
+				h="2rem"
+				w="100%"
+				className="info"
+				align="center"
+				color={COLORS.PRIMARY_COLOR}>
+				Welcome to Sunbifly Dubai Visa Processing Centre. Send your data page
+				and photo passport via whatsapp +2348188885290 or call +2348182666894.
+			</Flex>
+			<Box
+				pos="relative"
+				h={{ base: "20rem", md: "30rem" }}
+				style={{
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+					backgroundImage:
+						"url(https://www.aircargoweek.com/wp-content/uploads/2020/08/1920_a380.jpg)",
+				}}>
+				<Text
+					color="white"
+					top={{ base: "3rem", md: "5rem" }}
+					ml={{ base: "1rem", md: "3rem", lg: "5rem" }}
+					pos="absolute"
+					fontWeight="bold"
+					fontSize={{ base: "1.4rem", md: "1.7rem", lg: "2rem" }}>
+					Travelling to Dubai? <br />
+					<Box
+						as="p"
+						marginTop="1rem"
+						fontSize={{ base: "0.9rem", md: "1rem", lg: "1.2rem" }}>
+						Apply for your UAE visa with{" "}
+						<span
+							style={{ color: `${COLORS.PRIMARY_COLOR}`, fontStyle: "italic" }}>
+							Sunblify
+						</span>{" "}
+						<br />
+						for a hassle free experience
+					</Box>
+				</Text>
+			</Box>
 			<Flex bgColor="#f9f9f9" flexDir="column" px="10%" pb="2rem">
 				<Text
-					color="red"
+					color={COLORS.PRIMARY_COLOR}
 					fontWeight="bold"
 					textAlign={{ base: "center", md: "justify" }}
-					fontSize={{ base: "3xl", md: "4xl" }}
+					fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
 					py="2rem">
 					IMPORTANT: COVID-19 UPDATES
 				</Text>
@@ -64,7 +124,7 @@ const App = () => {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							style={{ color: "red" }}
+							style={{ color: `${COLORS.PRIMARY_COLOR}` }}
 							href="https://c.ekstatic.net/ecl/documents/health-declaration-e-form.pdf">
 							here
 						</a>{" "}
@@ -77,7 +137,7 @@ const App = () => {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							style={{ color: "red" }}
+							style={{ color: `${COLORS.PRIMARY_COLOR}` }}
 							href="https://c.ekstatic.net/ecl/documents/dubai-arrivals-quarantine-procedure-declaration-form.pdf">
 							here
 						</a>{" "}
@@ -85,7 +145,7 @@ const App = () => {
 					</Covid19Update>
 					<Covid19Update>
 						For booking PCR test through authorized centre please visit{" "}
-						<a style={{ color: "red" }} href="/">
+						<a style={{ color: `${COLORS.PRIMARY_COLOR}` }} href="/">
 							here.
 						</a>
 					</Covid19Update>
@@ -100,7 +160,7 @@ const App = () => {
 						<a
 							target="_blank"
 							rel="noreferrer"
-							style={{ color: "red" }}
+							style={{ color: `${COLORS.PRIMARY_COLOR}` }}
 							href="https://www.emirates.com/english/help/covid-19/dubai-travel-requirements/">
 							here.
 						</a>
@@ -115,13 +175,13 @@ const App = () => {
 				<Text
 					fontWeight="bold"
 					px="5%"
-					fontSize={{ base: "1.3rem", md: "1.5rem", lg: "1.8rem" }}>
+					fontSize={{ base: "1.1rem", md: "1.5rem", lg: "1.8rem" }}>
 					CHOOSE FROM A{" "}
-					<Box as="span" color="red">
+					<Box as="span" color={COLORS.PRIMARY_COLOR}>
 						RANGE
 					</Box>{" "}
 					OF{" "}
-					<Box as="span" color="red">
+					<Box as="span" color={COLORS.PRIMARY_COLOR}>
 						VISA OPTIONS
 					</Box>{" "}
 					TO SUIT YOUR NEEDS!
@@ -140,7 +200,7 @@ const App = () => {
 				<Text
 					textAlign="center"
 					fontWeight="bold"
-					fontSize="2.2rem"
+					fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2.2rem" }}
 					mb="0.5rem">
 					APPLY ONLINE THROUGH WEBSITE
 				</Text>
@@ -156,7 +216,10 @@ const App = () => {
 						w={{ base: "100%", md: "45%" }}
 						pl={{ base: "0", md: "3%" }}>
 						<Text fontWeight="bold" fontSize="1.4rem">
-							<Box as="span" color="red" textTransform="uppercase">
+							<Box
+								as="span"
+								color={COLORS.PRIMARY_COLOR}
+								textTransform="uppercase">
 								Step 1:
 							</Box>{" "}
 							Book your ticket with Emirates
@@ -165,7 +228,7 @@ const App = () => {
 							<Icon fontSize="2xl" mr="0.7rem" mt="3px" as={FaHandPointRight} />
 							<Text>
 								Once you have a valid PNR number, log on to{" "}
-								<Box color="red" as="span">
+								<Box color={COLORS.PRIMARY_COLOR} as="span">
 									www.emirates.com
 								</Box>
 							</Text>
@@ -189,7 +252,10 @@ const App = () => {
 							fontWeight="bold"
 							fontSize="1.4rem"
 							pt={{ base: "1rem", md: "0" }}>
-							<Box as="span" color="red" textTransform="uppercase">
+							<Box
+								as="span"
+								color={COLORS.PRIMARY_COLOR}
+								textTransform="uppercase">
 								Step 2:
 							</Box>{" "}
 							Apply for your UAE visa
@@ -222,7 +288,10 @@ const App = () => {
 						w={{ base: "100%", md: "45%" }}
 						pl={{ base: "0", md: "3%" }}>
 						<Text fontWeight="bold" fontSize="1.4rem">
-							<Box as="span" color="red" textTransform="uppercase">
+							<Box
+								as="span"
+								color={COLORS.PRIMARY_COLOR}
+								textTransform="uppercase">
 								Step 3:
 							</Box>{" "}
 							Proceed to Online Application
@@ -245,13 +314,13 @@ const App = () => {
 					mx={{ base: "10%", md: "20%" }}>
 					<Button
 						w="10rem"
-						bgColor="red"
+						bgColor={COLORS.PRIMARY_COLOR}
 						color="white"
 						as="a"
 						target="_blank"
 						rel="noreferrer"
 						href="https://www.emirates.com/ng/english/"
-						_focus={{ border: "none", bgColor: "red" }}>
+						_focus={{ border: "none", bgColor: `${COLORS.PRIMARY_COLOR}` }}>
 						Apply Now
 					</Button>
 				</Flex>
@@ -264,25 +333,47 @@ const App = () => {
 				textAlign="center"
 				w="100%"
 				pt={{ base: "2rem", sm: "3rem", md: "4rem" }}>
-				<Text fontSize="1.8rem" fontWeight="bold" color="red">
+				<Text fontSize="1.8rem" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
 					Contact Us
 				</Text>
-				<Flex flexDir="column" align="center" color="grey" pt={{base: "1rem", md: "2rem"}}>
-					<Flex fontSize={{ base: "0.9rem", sm: "1rem", md: "1.2rem"}}>
-						<Icon fontSize={{base: "xl", md: "2xl"}} mr="0.7rem" mt="3px" as={FaPhoneAlt} />
-						<Text>+2348188885290, +2348094266759</Text>
-					</Flex>
-					<Flex fontSize={{ base: "0.9rem", sm: "1rem", md: "1.2rem"}} mt="1rem">
-						<Icon fontSize={{base: "xl", md: "2xl"}} mr="0.7rem" mt="3px" as={MdEmail} />
+				<Flex
+					flexDir="column"
+					align="flex-start"
+					px={{ base: "5%", md: "10%", lg: "20%" }}
+					color="grey"
+					pt={{ base: "0.5rem", md: "1rem" }}>
+					<Flex
+						ml={{ base: "0rem", sm: "4rem", md: "8rem", lg: "10rem" }}
+						fontSize={{ base: "0.9rem", sm: "1rem" }}
+						mt="1rem">
+						<Icon
+							fontSize={{ base: "0.7rem", sm: "xl", md: "2xl" }}
+							mr="0.7rem"
+							mt="3px"
+							as={MdEmail}
+						/>
 						<Text>info@sunbifly.com</Text>
 					</Flex>
-					<Flex fontSize={{ base: "0.9rem", sm: "1rem", md: "1.2rem"}} mt="1rem">
-						<Icon fontSize={{base: "xl", md: "2xl"}} mr="0.1rem" mt="3px" as={MdAddLocation} />
-						<Text>
-							Suite A5, Aderoke Plaza, Dopemu Underbridge, Akowonjo Roundabout,
-							Lagos, Nigeria.
-						</Text>
+					<Flex
+						ml={{ base: "0rem", sm: "4rem", md: "8rem", lg: "10rem" }}
+						fontSize={{ base: "0.9rem", sm: "1rem" }}>
+						<Icon
+							fontSize={{ base: "0.7rem", sm: "xl", md: "2xl" }}
+							mr="0.7rem"
+							mt="3px"
+							as={FaPhoneAlt}
+						/>
+						<Text>+2348188885290, +2348182666894</Text>
 					</Flex>
+
+					<Text
+						fontSize={{ base: "0.9rem", sm: "1rem" }}
+						mt="1rem"
+						textAlign={{ base: "justify", md: "center" }}>
+						For fast processing, send the following documents via whatsapp, or
+						email (Intl passport data page and Photo passport, visa comes out in
+						24hrs ) One month visa #76,000, 3 month visa # 175,000.
+					</Text>
 				</Flex>
 				<Box
 					pt={{ base: "2rem", sm: "3rem", md: "4rem" }}
@@ -303,9 +394,9 @@ const App = () => {
 					fontSize="0.8rem"
 					h={{ base: "20rem", sm: "18rem", md: "unset" }}
 					pr="3%">
-					<Text fontSize="1.8rem">SRK's Personal Invitation to Dubai</Text>
+					<Text fontSize="1.8rem">Welcome to Dubai Landing Video</Text>
 					<Flex flexDir="column" color="grey" justify="space-evenly" h="100%">
-						<Text>#BeMyGuest</Text>
+						<Text># Be Our Guest</Text>
 						<Text>
 							Whether you are visiting as family or with friends or with your
 							special someone, Dubai has something magical in store for you!
@@ -337,8 +428,11 @@ const App = () => {
 
 			<Flex flexDir="column" bgColor="#f9f9f9" w="100%" minH="14rem">
 				<Flex flexDir="column" w="80%" align="center" mx="10%" my="2rem">
-					<Text fontSize="1.8rem" fontWeight="bold" color="red">
-						WHY APPLY THROUGH DVPC?
+					<Text
+						fontSize="1.8rem"
+						fontWeight="bold"
+						color={COLORS.PRIMARY_COLOR}>
+						WHY APPLY THROUGH US?
 					</Text>
 					<Flex flexDir={{ base: "column", md: "row" }} pt="1rem">
 						<Text
@@ -346,8 +440,14 @@ const App = () => {
 							px={{ base: "none", md: "5%" }}
 							textAlign="center"
 							fontWeight="bold"
-							borderRight={{ base: "none", md: "1px solid red" }}
-							borderBottom={{ base: "1px solid red", md: "none" }}>
+							borderRight={{
+								base: "none",
+								md: `1px solid ${COLORS.PRIMARY_COLOR}`,
+							}}
+							borderBottom={{
+								base: `1px solid ${COLORS.PRIMARY_COLOR}`,
+								md: "none",
+							}}>
 							Integration with Emirates portal for quick online application
 						</Text>
 						<Text
@@ -355,8 +455,14 @@ const App = () => {
 							px={{ base: "none", md: "5%" }}
 							textAlign="center"
 							fontWeight="bold"
-							borderRight={{ base: "none", md: "1px solid red" }}
-							borderBottom={{ base: "1px solid red", md: "none" }}>
+							borderRight={{
+								base: "none",
+								md: `1px solid ${COLORS.PRIMARY_COLOR}`,
+							}}
+							borderBottom={{
+								base: `1px solid ${COLORS.PRIMARY_COLOR}`,
+								md: "none",
+							}}>
 							Trusted by Emirates and the Government of Dubai
 						</Text>
 						<Text
@@ -368,13 +474,6 @@ const App = () => {
 						</Text>
 					</Flex>
 				</Flex>
-				<Text
-					fontSize="0.7rem"
-					px="1rem"
-					textAlign={{ base: "center", md: "start" }}>
-					* This service is exclusively applicable for Emirates and Fly Dubai
-					passengers only
-				</Text>
 			</Flex>
 			<Text
 				w="100%"
@@ -383,7 +482,7 @@ const App = () => {
 				bgColor="#00305d"
 				color="white"
 				fontSize={{ base: "0.7rem", md: "0.9rem" }}>
-				© VFS Global 2019. All Rights Reserved
+				© Sunblify Dubai Visa 2019. All Rights Reserved
 			</Text>
 		</ChakraProvider>
 	);
