@@ -26,7 +26,6 @@ const App = () => {
 	return (
 		<ChakraProvider theme={{ ...theme, ...customTheme }}>
 			<CSSReset />
-
 			<Container px="15px" d="flex" justifyContent="center" maxW="800px">
 				<Flex
 					justify="center"
@@ -60,7 +59,7 @@ const App = () => {
 			<Flex
 				display={{ base: "none", md: "flex" }}
 				fontWeight="bold"
-				fontSize={{ base: "0", md: "0.8rem", lg: "0.9rem", xl: "1.1rem" }}
+				fontSize={{ base: "0", md: "0.6rem", lg: "0.8rem", xl: "1rem" }}
 				h="2rem"
 				w="100%"
 				className="info"
@@ -391,7 +390,6 @@ const App = () => {
 				<Flex
 					flexDir="column"
 					w={{ base: "80%", md: "35%" }}
-					fontSize="0.8rem"
 					h={{ base: "20rem", sm: "18rem", md: "unset" }}
 					pr="3%">
 					<Text fontSize="1.8rem">Welcome to Dubai Landing Video</Text>
@@ -402,9 +400,8 @@ const App = () => {
 							special someone, Dubai has something magical in store for you!
 						</Text>
 						<Text>
-							Watch this video where Shah Rukh Khan takes you through his Dubai,
-							as he visits his favorite spots and shares his unique perspectives
-							and experiences.
+							Watch this video where Dubai takes you through the landing
+							process.
 						</Text>
 					</Flex>
 				</Flex>
