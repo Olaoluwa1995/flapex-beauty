@@ -2,14 +2,15 @@ import { extendTheme } from "@chakra-ui/react";
 import { Styles } from "@chakra-ui/theme-tools";
 
 export const COLORS = {
-	PRIMARY_COLOR: "#c60c30",
+	// PRIMARY_COLOR: "#7d053f",
+	PRIMARY_COLOR: "purple",
 	DEEP_BLUE: "#212353",
 	WHITE: "#ffffff",
 	GREY_COLOR: "#808080",
-	BACKGROUND_COLOR: "#f9f9f9",
+	BACKGROUND_COLOR: "#fdfdfd",
 };
 
-export const BoxShadow = "0 0 4px 0 grey";
+export const BoxShadow = "0 3px 15px 0 grey";
 export const BorderRadius = "5px";
 
 const STYLES: Styles = {
@@ -27,7 +28,8 @@ const STYLES: Styles = {
 			display: "flex",
 			flexDir: "column",
 			overflowX: "hidden",
-			color: "black",
+			color: "blackAlpha.800",
+			fontSize: "1.2rem",
 
 			"#root": {
 				"* .roboto": {

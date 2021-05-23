@@ -1,0 +1,16 @@
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* transform-origin: left; */
+	transform: scale(1.5);
+	animation: scale 10s linear forwards;
+}
+
+@keyframes scale {
+	to {
+		transform: scale(1);
+	}
+}

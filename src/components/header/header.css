@@ -1,9 +1,9 @@
-.example {
+.header {
 	margin-top: -150px;
-	animation: example 0.5s ease-in-out 1 forwards;
+	animation: header 1s linear 0.3s forwards;
 }
 
-@keyframes example {
+@keyframes header {
 	0% {
 		margin-top: -120px;
 	}
@@ -20,4 +20,3 @@
 		margin-top: 0px;
 	}
 }
-
