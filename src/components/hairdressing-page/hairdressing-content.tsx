@@ -35,7 +35,12 @@ const Content = () => {
 							boxShadow="0 8px 8px 0 gray"
 						/>
 					</Flex>
-					<Flex flexDir="column" w="50%" h="100%" justify="space-between">
+					<Flex
+						data-aos="zoom-in"
+						flexDir="column"
+						w="50%"
+						h="100%"
+						justify="space-between">
 						<Text>
 							All services include an initial consultation, hair and scalp
 							analysis, use of only the very best quality shampoo’s &
@@ -265,58 +270,69 @@ const Content = () => {
 					/>
 				</Flex>
 			</Flex>
-			<Text py="4rem"><Box as="span" fontWeight="bold">Contact us now on 01484 722220</Box> to make an appointment – and find out for yourself why at <Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>Flapex Beauty</Box>, we say… <Box as="span" fontWeight="bold" fontStyle="italic">it’s all about you…</Box></Text>
+			<Text py="4rem">
+				<Box as="span" fontWeight="bold">
+					Contact us now on 01484 722220
+				</Box>{" "}
+				to make an appointment – and find out for yourself why at{" "}
+				<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
+					Flapex Beauty
+				</Box>
+				, we say…{" "}
+				<Box as="span" fontWeight="bold" fontStyle="italic">
+					it’s all about you…
+				</Box>
+			</Text>
 			<Flex w="100%" py="5%" justify="space-between" bgColor="white">
-					<Flex
-						pos="relative"
-						bgColor="#eac8c5"
-						height="25rem"
-						width="30%">
-						<Flex pos="absolute" top="-10px" ml="45%">
-							<Icon as={BsChatQuote} fontSize="2.2rem" />
-						</Flex>
-						<Flex flexDir="column" justify="space-between" padding="2rem">
-							<Text mt="1rem">
-							This place is amazing!! I’ve had my hair cut by Beckie and she’s done an amazing job with my hair! I’ve got really fine hair but she knows exactly how to work it so it won’t look thinner than it already is! Thank you all of you at this amazing place in never ever going anywhere else!
-							</Text>
-							<Text fontWeight="bold">Marie Sallis</Text>
-						</Flex>
+				<Flex pos="relative" bgColor="#eac8c5" height="25rem" width="30%">
+					<Flex pos="absolute" top="-10px" ml="45%">
+						<Icon as={BsChatQuote} fontSize="2.2rem" />
 					</Flex>
-					<Flex
-						pos="relative"
-						bgColor="#eac8c5"
-						height="27rem"
-						width="30%">
-						<Flex pos="absolute" top="-10px" ml="45%">
-							<Icon as={BsChatQuote} fontSize="2.2rem" />
-						</Flex>
-						<Flex flexDir="column" justify="space-between" padding="2rem">
-							<Text my="1rem">
-							Great haircuts, colours and beauty treatments – at a reasonable price. Also lovely friendly helpful staff.
-							</Text>
-							<Text fontWeight="bold">Michelle Clayton</Text>
-							<Text my="1rem">
-							I have been going to Park Row for longer than I care to remember. Lovely people, excellent service. I always feel better when I come out.
-							</Text>
-							<Text fontWeight="bold">Pam Fellows</Text>
-						</Flex>
+					<Flex flexDir="column" justify="space-between" padding="2rem">
+						<Text mt="1rem">
+							This place is amazing!! I’ve had my hair cut by Beckie and she’s
+							done an amazing job with my hair! I’ve got really fine hair but
+							she knows exactly how to work it so it won’t look thinner than it
+							already is! Thank you all of you at this amazing place in never
+							ever going anywhere else!
+						</Text>
+						<Text fontWeight="bold">Marie Sallis</Text>
 					</Flex>
-					<Flex
-						pos="relative"
-						bgColor="#eac8c5"
-						height="25rem"
-						width="30%">
-						<Flex pos="absolute" top="-10px" ml="45%">
-							<Icon as={BsChatQuote} fontSize="2.2rem" />
-						</Flex>
-						<Flex flexDir="column" justify="space-between" padding="2rem">
-							<Text mt="1rem">
-							First time I visited today, I walked through the door (no appt!) and literally said “help me” to the poor hairdresser! Well help me she did. Amy – what a star you are. I shall be back to see you in 4 weeks. This Cinderella will go the ball after all – and it’s all thanks to you.
-							</Text>
-							<Text fontWeight="bold">Laura Stone</Text>
-						</Flex>
+				</Flex>
+				<Flex pos="relative" bgColor="#eac8c5" height="27rem" width="30%">
+					<Flex pos="absolute" top="-10px" ml="45%">
+						<Icon as={BsChatQuote} fontSize="2.2rem" />
 					</Flex>
+					<Flex flexDir="column" justify="space-between" padding="2rem">
+						<Text my="1rem">
+							Great haircuts, colours and beauty treatments – at a reasonable
+							price. Also lovely friendly helpful staff.
+						</Text>
+						<Text fontWeight="bold">Michelle Clayton</Text>
+						<Text my="1rem">
+							I have been going to Park Row for longer than I care to remember.
+							Lovely people, excellent service. I always feel better when I come
+							out.
+						</Text>
+						<Text fontWeight="bold">Pam Fellows</Text>
 					</Flex>
+				</Flex>
+				<Flex pos="relative" bgColor="#eac8c5" height="25rem" width="30%">
+					<Flex pos="absolute" top="-10px" ml="45%">
+						<Icon as={BsChatQuote} fontSize="2.2rem" />
+					</Flex>
+					<Flex flexDir="column" justify="space-between" padding="2rem">
+						<Text mt="1rem">
+							First time I visited today, I walked through the door (no appt!)
+							and literally said “help me” to the poor hairdresser! Well help me
+							she did. Amy – what a star you are. I shall be back to see you in
+							4 weeks. This Cinderella will go the ball after all – and it’s all
+							thanks to you.
+						</Text>
+						<Text fontWeight="bold">Laura Stone</Text>
+					</Flex>
+				</Flex>
+			</Flex>
 		</Flex>
 	);
 };

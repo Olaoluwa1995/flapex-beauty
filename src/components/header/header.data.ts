@@ -23,7 +23,7 @@ export const headerLinksData: LinkProps[] = [
 	{
 		key: 4,
 		title: "Pamper Parties",
-		url: "/",
+		url: "/pamper-parties",
 	},
 	{
 		key: 5,

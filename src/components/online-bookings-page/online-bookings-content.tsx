@@ -15,7 +15,6 @@ const Content = () => {
 	}, []);
 	return (
 		<>
-			{/* <Flex px="15%" pt="12rem" flexDir="column" w="100%" bgColor="white"> */}
 			<Flex
 				w="100%"
 				justify="space-between"
@@ -118,41 +117,45 @@ const Content = () => {
 				minH="25rem"
 				justify="center"
 				bgColor="transparent">
-				<Flex data-aos="zoom-in" flexDir="column" h="15rem" bgColor="rgba(125,5,63,0.8)" w="100%" py="5%" align="center">
-					<Text fontSize="2rem" color="white">Book Your Next Hair Appointment Now!</Text>
+				<Flex
+					data-aos="zoom-in"
+					flexDir="column"
+					h="15rem"
+					bgColor="rgba(125,5,63,0.8)"
+					w="100%"
+					py="5%"
+					align="center">
+					<Text fontSize="2rem" color="white">
+						Book Your Next Hair Appointment Now!
+					</Text>
 					<LinkItem
-					my="1.5rem"
-					color="white"
-					_hover={{
-						bgColor: "none",
-					}}
-					mx="auto"
-					isAnchor
-					url="https://book.thesalon.app/salon/fa75b62e-1382-43e3-adf0-3853f2bf7038">
-					<Button
-						h="3.5rem"
-						fontSize="1.3rem"
-						border="1px solid white"
-						fontWeight="normal"
+						my="1.5rem"
+						color="white"
 						_hover={{
 							bgColor: "none",
 						}}
-						w="20rem"
-						bgColor="#5e5e5e">
-						Appointment Enquiry
-					</Button>
-				</LinkItem>
+						mx="auto"
+						isAnchor
+						url="https://book.thesalon.app/salon/fa75b62e-1382-43e3-adf0-3853f2bf7038">
+						<Button
+							h="3.5rem"
+							fontSize="1.3rem"
+							border="1px solid white"
+							fontWeight="normal"
+							_hover={{
+								bgColor: "none",
+							}}
+							w="20rem"
+							bgColor="#5e5e5e">
+							Appointment Enquiry
+						</Button>
+					</LinkItem>
 				</Flex>
 			</Flex>
-			<Flex
-			pt="3rem"
-			px="15%"
-			h="45rem"
-			bgColor="white">
+			<Flex pt="3rem" px="15%" h="45rem" bgColor="white">
 				<Image src={MapImage} h="90%" w="100%" />
-		</Flex>
+			</Flex>
 		</>
-		// </Flex>
 	);
 };
 
