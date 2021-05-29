@@ -1,16 +1,13 @@
 import React from "react";
 
-import OthersHeader from "../../components/header/others-header-component";
-import Footer from "../../components/footer/footer-component";
 import Content from "../../components/pamper-parties-page/pamper-parties-content";
+import PageLayout from "../../components/layout/page-layout.component";
 
 const PamperPartiesPage = () => {
 	return (
-		<>
-			<OthersHeader />
+		<PageLayout>
 			<Content />
-			<Footer />
-		</>
+		</PageLayout>
 	);
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./welcome.css";
-import WelcomeHeader from "../../components/header/header-component";
+import WelcomeHeader from "../../components/header/welcome-header-component";
 import Footer from "../../components/footer/footer-component";
 import Banner from "../../components/welcome-page/banner";
 import SafetyMeasure from "../../components/welcome-page/safety-measures";
@@ -15,7 +15,7 @@ import Location from "../../components/welcome-page/location";
 const WelcomePage = () => {
 	return (
 		<>
-			<WelcomeHeader animate={true} />
+			<WelcomeHeader />
 			<Banner />
 			<SafetyMeasure />
 			<WelcomeNote />

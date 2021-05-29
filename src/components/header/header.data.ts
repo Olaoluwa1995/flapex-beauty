@@ -30,9 +30,9 @@ export const headerLinksData: LinkProps[] = [
 		title: "Online Bookings",
 		url: "/online-bookings",
 	},
-	{
-		key: 6,
-		title: "Contact Us",
-		url: "/",
-	},
+	// {
+	// 	key: 6,
+	// 	title: "Contact Us",
+	// 	url: "/",
+	// },
 ];
