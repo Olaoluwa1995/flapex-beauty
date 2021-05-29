@@ -10,6 +10,7 @@ import AboutUsPage from "./pages/about-us/about-us";
 import HairdressingPage from "./pages/hairdressing/hairdressing";
 import OnlineBookingsPage from "./pages/online-bookings/online-bookings";
 import PamperPartiesPage from "./pages/pamper-parties/pamper-parties";
+import ContactUsPage from "./pages/contact-us/contact-us";
 
 const App = () => {
 	return (
@@ -21,6 +22,7 @@ const App = () => {
 				<Route exact path="/hairdressing" component={HairdressingPage} />
 				<Route exact path="/online-bookings" component={OnlineBookingsPage} />
 				<Route exact path="/pamper-parties" component={PamperPartiesPage} />
+				<Route exact path="/contact-us" component={ContactUsPage} />
 			</Switch>
 		</ChakraProvider>
 	);

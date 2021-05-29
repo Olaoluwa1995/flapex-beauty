@@ -6,7 +6,6 @@ import {
 	Image,
 	Text,
 	Flex,
-	useDisclosure,
 	Menu,
 	MenuList,
 	MenuItem,
@@ -56,13 +55,17 @@ const HeaderContent = () => {
 					<Text
 						position="relative"
 						as="span"
-						onMouseLeave={() => setIsOpen(false)}
 						onMouseOver={() => setIsOpen(true)}>
-						<NavLinkItem aria-label="contact-us" url="/">
+						<NavLinkItem aria-label="contact-us" url="/contact-us">
 							Contact Us <ChevronDownIcon fontSize="30px" />
 						</NavLinkItem>
 					</Text>
-					<Box zIndex={3} position="absolute" right="8%" mt="2rem">
+					<Box
+						onMouseLeave={() => setIsOpen(false)}
+						zIndex={3}
+						position="absolute"
+						right="8%"
+						mt="2rem">
 						<Menu isOpen={isOpen}>
 							<MenuList>
 								<MenuItem>Download</MenuItem>
