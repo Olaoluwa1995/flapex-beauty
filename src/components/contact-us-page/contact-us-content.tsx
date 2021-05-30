@@ -1,11 +1,8 @@
 import React from "react";
-import { Button, Flex, Text, Box, Image } from "@chakra-ui/react";
+import { Flex, Text, Box, Image } from "@chakra-ui/react";
 import Aos from "aos";
 
-import OnlineBookingsImage from "../../assets/images/welcome-page/welcome-note.png";
 import AppointmentImage from "../../assets/images/online-bookings-page/appointment.jpg";
-import BgImage from "../../assets/images/welcome-page/testimonials-background.jpg";
-import LinkItem from "../../components/link-item/link-item.component";
 import { COLORS } from "../../styles/theme";
 import MapImage from "../../assets/images/welcome-page/map.png";
 

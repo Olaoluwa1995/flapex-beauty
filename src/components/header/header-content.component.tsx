@@ -68,7 +68,11 @@ const HeaderContent = () => {
 						mt="2rem">
 						<Menu isOpen={isOpen}>
 							<MenuList>
-								<MenuItem>Download</MenuItem>
+								<MenuItem>
+									<NavLinkItem aria-label="terms" url="/terms">
+										Website Terms <br />& Conditions
+									</NavLinkItem>
+								</MenuItem>
 								<MenuItem>Create a Copy</MenuItem>
 								<MenuItem>Mark as Draft</MenuItem>
 								<MenuItem>Delete</MenuItem>
