@@ -26,7 +26,7 @@ const LinkItem: React.FC<LinkProps> = ({
 		<Box
 			as={isAnchor ? "a" : isLink ? Link : NavLink}
 			{...(isAnchor ? { href: url } : { to: url })}
-			//activeStyle={{ color: `${COLORS.PRIMARY_COLOR}` }}
+			activeStyle={{ color: `${COLORS.PRIMARY_COLOR}` }}
 			exact={true}
 			to={url}
 			fontSize={{ base: "0.8rem", lg: "0.9rem" }}

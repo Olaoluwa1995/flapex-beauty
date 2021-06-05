@@ -5,7 +5,11 @@ import { COLORS, BoxShadow } from "../../styles/theme";
 
 const AnnouncementSection = () => {
 	return (
-		<Flex pb="3rem" px="15%" minH="35rem" bgColor={COLORS.BACKGROUND_COLOR}>
+		<Flex
+			pb="3rem"
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			minH="35rem"
+			bgColor={COLORS.BACKGROUND_COLOR}>
 			<Flex
 				flexDir="column"
 				w="100%"
@@ -13,9 +17,12 @@ const AnnouncementSection = () => {
 				boxShadow={BoxShadow}
 				border="4px solid grey"
 				borderRadius="4px"
+				fontSize={{ base: "0.8rem", md: "0.9rem", lg: "1rem" }}
 				py="2rem"
 				px="5%">
-				<Text fontSize="2rem" color={COLORS.PRIMARY_COLOR}>
+				<Text
+					fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2rem" }}
+					color={COLORS.PRIMARY_COLOR}>
 					Beauty Treatments: An Announcement
 				</Text>
 				<Text>

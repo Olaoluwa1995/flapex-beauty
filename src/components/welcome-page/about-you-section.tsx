@@ -7,13 +7,24 @@ import AboutYouImage from "../../assets/images/welcome-page/about-you.jpg";
 const AboutYou = () => {
 	return (
 		<Flex
-			flexDir="row"
+			flexDir={{ base: "column", lg: "row-reverse" }}
 			justify="space-between"
-			py="5rem"
-			px="15%"
-			h="40rem"
+			py={{ base: "2rem", md: "3.5rem", lg: "5rem" }}
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			minH="40rem"
 			bgColor={COLORS.BACKGROUND_COLOR}>
-			<Flex justify="space-between" flexDir="column" w="65%">
+			<Flex
+				flexDir="column"
+				w={{ base: "100%", lg: "40%", xl: "30%" }}
+				boxShadow={BoxShadow}>
+				<Image src={AboutYouImage} h={{ base: "25rem", lg: "100%" }} w="100%" />
+			</Flex>
+			<Flex
+				fontSize={{ base: "0.8rem", md: "0.9rem", lg: "1rem" }}
+				justify="space-between"
+				flexDir="column"
+				mt={{ base: "1rem", lg: "none" }}
+				w={{ base: "100%", lg: "55%", xl: "65%" }}>
 				<Text>
 					At{" "}
 					<Box fontWeight="bold" as="span" color={COLORS.PRIMARY_COLOR}>
@@ -47,9 +58,6 @@ const AboutYou = () => {
 					15 minute initial consultation, to make you feel 100% confident in
 					what we can do.
 				</Text>
-			</Flex>
-			<Flex flexDir="column" w="30%" boxShadow={BoxShadow}>
-				<Image src={AboutYouImage} h="100%" w="100%" />
 			</Flex>
 		</Flex>
 	);

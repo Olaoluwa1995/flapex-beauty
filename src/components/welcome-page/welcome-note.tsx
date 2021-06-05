@@ -7,13 +7,28 @@ import WelcomeNoteImage from "../../assets/images/welcome-page/welcome-note.png"
 const WelcomeNote = () => {
 	return (
 		<Flex
-			flexDir="row"
+			flexDir={{ base: "column", lg: "row-reverse" }}
 			justify="space-between"
 			pb="3rem"
-			px="15%"
-			h="35rem"
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			minH="35rem"
 			bgColor={COLORS.BACKGROUND_COLOR}>
-			<Flex justify="space-between" flexDir="column" w="70%">
+			<Flex
+				flexDir="column"
+				w={{ base: "100%", lg: "35%", xl: "25%" }}
+				boxShadow={BoxShadow}>
+				<Image
+					src={WelcomeNoteImage}
+					h={{ base: "15rem", md: "20rem", lg: "100%" }}
+					w="100%"
+				/>
+			</Flex>
+			<Flex
+				pt={{ base: "2rem", lg: "none" }}
+				justify="space-between"
+				flexDir="column"
+				fontSize={{ base: "0.9rem", lg: "1rem" }}
+				w={{ base: "100%", lg: "60%", xl: "70%" }}>
 				<Text>
 					Welcome to{" "}
 					<Box fontWeight="bold" as="span" color={COLORS.PRIMARY_COLOR}>
@@ -43,9 +58,6 @@ const WelcomeNote = () => {
 					always return home excited and bursting with new styling and colouring
 					ideas to share with our clients.
 				</Text>
-			</Flex>
-			<Flex flexDir="column" w="25%" boxShadow={BoxShadow}>
-				<Image src={WelcomeNoteImage} h="100%" w="100%" />
 			</Flex>
 		</Flex>
 	);

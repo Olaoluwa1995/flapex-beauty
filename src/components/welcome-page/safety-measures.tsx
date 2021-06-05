@@ -7,17 +7,22 @@ import { safetyMeasuresData } from "./safety-measures-data";
 
 const SafetyMeasure = () => {
 	return (
-		<Flex py="5rem" px="15%" minH="40rem" bgColor={COLORS.BACKGROUND_COLOR}>
+		<Flex
+			py={{ base: "2rem", md: "3rem", lg: "5rem" }}
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			minH="40rem"
+			bgColor={COLORS.BACKGROUND_COLOR}>
 			<Flex
 				flexDir="column"
 				w="100%"
 				boxShadow={BoxShadow}
 				border="3px solid grey"
 				borderRadius="6px"
+				fontSize={{ base: "0.8rem", md: "0.9rem", lg: "1rem" }}
 				px="5%">
 				<Text
 					mt="1.5rem"
-					fontSize="1.8rem"
+					fontSize={{ base: "1.2rem", md: "1.5rem", lg: "1.8rem" }}
 					fontWeight="bold"
 					textAlign="center"
 					color={COLORS.PRIMARY_COLOR}>
@@ -50,13 +55,18 @@ const SafetyMeasure = () => {
 					isAnchor
 					url="https://parkrowhairandbeauty.com/appointment-enquiry/">
 					<Button
-						h="3.5rem"
-						fontSize="1.3rem"
+						h={{ base: "2.3rem", md: "2.8rem", lg: "3.5rem" }}
+						fontSize={{
+							base: "0.8rem",
+							sm: "0.9rem",
+							md: "1.1rem",
+							lg: "1.3rem",
+						}}
 						fontWeight="normal"
 						_hover={{
 							bgColor: "none",
 						}}
-						w="20rem"
+						w={{ base: "12rem", sm: "15rem", lg: "20rem" }}
 						bgColor={COLORS.PRIMARY_COLOR}>
 						Appointment Enquiry
 					</Button>

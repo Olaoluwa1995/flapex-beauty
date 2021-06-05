@@ -6,7 +6,11 @@ import TopBackgroundImage from "../../assets/images/welcome-page/top-background.
 
 const Banner = () => {
 	return (
-		<Flex h="50rem" w="100%" pos="relative" overflow="hidden">
+		<Flex
+			h={{ base: "30rem", md: "40rem", lg: "50rem" }}
+			w="100%"
+			pos="relative"
+			overflow="hidden">
 			<Image
 				className="background-image"
 				src={TopBackgroundImage}
@@ -27,14 +31,19 @@ const Banner = () => {
 					justify="center">
 					<Text
 						letterSpacing="widest"
-						fontSize="5rem"
+						fontSize={{ base: "2rem", sm: "3rem", md: "4rem", lg: "5rem" }}
 						fontWeight="bold"
 						color="white">
 						PARK ROW
 					</Text>
 					<Text
 						letterSpacing="widest"
-						fontSize="2.2rem"
+						fontSize={{
+							base: "1.5rem",
+							sm: "1.8rem",
+							md: "2rem",
+							lg: "2.2rem",
+						}}
 						fontWeight="bold"
 						color={COLORS.PRIMARY_COLOR}>
 						HAIR & BEAUTY

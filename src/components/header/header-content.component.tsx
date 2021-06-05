@@ -1,27 +1,43 @@
 import React from "react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
 	Box,
+	Divider,
+	Drawer,
+	DrawerBody,
+	DrawerOverlay,
+	DrawerContent,
+	DrawerCloseButton,
 	Icon,
 	Image,
 	Text,
 	Flex,
+	List,
+	ListIcon,
+	ListItem,
 	Menu,
 	MenuList,
 	MenuItem,
+	useDisclosure,
 } from "@chakra-ui/react";
 import { FaPhoneAlt } from "react-icons/fa";
 
-import { headerLinksData } from "./header.data";
+import { headerLinksData, completeHeaderLinksData } from "./header.data";
 import NavLinkItem from "../link-item/header-links.component";
 import { COLORS } from "../../styles/theme";
 import Logo from "../../assets/images/hair-dressing-logo.jpeg";
 
 const HeaderContent = () => {
-	const [isOpen, setIsOpen] = React.useState(false);
+	const [isOpened, setIsOpen] = React.useState(false);
+	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<>
-			<Flex px="10%" py="1rem" bgColor={COLORS.PRIMARY_COLOR} align="center">
+			<Flex
+				px={{ base: "5%", xl: "10%" }}
+				py="1rem"
+				bgColor={COLORS.PRIMARY_COLOR}
+				align="center">
 				<Icon as={FaPhoneAlt} color="white" />
 				<Text
 					color="white"
@@ -37,12 +53,57 @@ const HeaderContent = () => {
 				w="100%"
 				align="center"
 				justify="space-between"
-				px="10%"
+				px={{ base: "5%", xl: "10%" }}
 				py="1rem">
-				<Flex w="20%">
-					<Image src={Logo} w="100%" h="4rem" />
+				<Flex w={{ base: "40%", md: "30%", lg: "20%" }}>
+					<Image src={Logo} w="100%" h={{ base: "3rem", lg: "4rem" }} />
 				</Flex>
-				<Flex w="70%" justify="space-between">
+				<Box display={{ base: "flex", lg: "none" }}>
+					<HamburgerIcon as="button" w={8} h={8} onClick={onOpen} />
+					<Drawer isOpen={isOpen} placement="right" onClose={onClose} size="xs">
+						<DrawerOverlay>
+							<DrawerContent>
+								<DrawerCloseButton
+									_focus={{
+										borderColor: "none",
+										boxShadow: "none",
+									}}
+								/>
+								<DrawerBody px="0" pt="3rem">
+									<Image
+										src={Logo}
+										alt="logo"
+										h="3rem"
+										w="6rem"
+										mb="1rem"
+										ml="2rem"
+									/>
+									<List>
+										<Divider my="0.5rem" />
+										{completeHeaderLinksData.map((headerLink: any) => {
+											return (
+												<ListItem key={headerLink.key}>
+													<NavLinkItem
+														pl="2rem"
+														fontSize="0.8rem"
+														textTransform="uppercase"
+														color={COLORS.GREY_COLOR}
+														aria-label={headerLink.title}
+														onClick={onClose}
+														url={headerLink.url}>
+														{headerLink.title}
+													</NavLinkItem>
+													<Divider my="0.5rem" />
+												</ListItem>
+											);
+										})}
+									</List>
+								</DrawerBody>
+							</DrawerContent>
+						</DrawerOverlay>
+					</Drawer>
+				</Box>
+				<Flex d={{ base: "none", lg: "flex" }} w="70%" justify="space-between">
 					{headerLinksData.map((headerLink: any) => {
 						return (
 							<Box key={headerLink.key}>
@@ -66,17 +127,18 @@ const HeaderContent = () => {
 						position="absolute"
 						right="8%"
 						mt="2rem">
-						<Menu isOpen={isOpen}>
+						<Menu isOpen={isOpened}>
 							<MenuList>
 								<MenuItem>
 									<NavLinkItem aria-label="terms" url="/terms">
 										Website Terms <br />& Conditions
 									</NavLinkItem>
 								</MenuItem>
-								<MenuItem>Create a Copy</MenuItem>
-								<MenuItem>Mark as Draft</MenuItem>
-								<MenuItem>Delete</MenuItem>
-								<MenuItem>Attend a Workshop</MenuItem>
+								<MenuItem>
+									<NavLinkItem aria-label="privacy" url="/privacy">
+										Our Privacy Policy
+									</NavLinkItem>
+								</MenuItem>
 							</MenuList>
 						</Menu>
 					</Box>

@@ -15,7 +15,7 @@ const NavLinkItem: React.FC<NavLinkProps> = ({
 	return (
 		<LinkItem
 			fontWeight="600"
-			fontSize="1.1rem"
+			fontSize={{ base: "0.7rem", md: "0.8rem", lg: "0.9rem", xl: "1rem" }}
 			isAnchor={false}
 			isLink={false}
 			url={url}

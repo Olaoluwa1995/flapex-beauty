@@ -12,16 +12,37 @@ const OfferSection = () => {
 
 	return (
 		<Flex
-			flexDir="row"
+			flexDir={{ base: "column", lg: "row-reverse" }}
 			justify="space-between"
-			py="5rem"
-			px="15%"
-			h="35rem"
+			py={{ base: "2rem", md: "3.5rem", lg: "5rem" }}
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			minH="35rem"
 			bgColor="white">
-			<Flex justify="space-between" flexDir="column" w="50%">
-				<Text fontSize="2rem" color={COLORS.PRIMARY_COLOR}>
+			<Flex w={{ base: "100%", lg: "45%" }}>
+				<Image
+					data-aos="zoom-in"
+					src={OfferSectionImage}
+					h={{ base: "15rem", md: "20rem", lg: "100%" }}
+					w="100%"
+				/>
+			</Flex>
+			<Flex
+				justify="space-between"
+				flexDir="column"
+				fontSize={{ base: "0.9rem", lg: "1rem" }}
+				w={{ base: "100%", lg: "50%" }}>
+				<Text
+					d={{ base: "none", lg: "flex" }}
+					fontSize={{ base: "1.2rem", md: "1.5rem", lg: "1.8rem" }}
+					color={COLORS.PRIMARY_COLOR}>
 					Offering The Best Hair <br />
 					Treatments
+				</Text>
+				<Text
+					d={{ base: "flex", lg: "none" }}
+					fontSize={{ base: "1.2rem", md: "1.5rem", lg: "1.8rem" }}
+					color={COLORS.PRIMARY_COLOR}>
+					Offering The Best Hair Treatments
 				</Text>
 				<Text>
 					<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -46,9 +67,6 @@ const OfferSection = () => {
 					for more details, or make sure you ask us about OLAPLEX™ when you next
 					come in for your haircut.
 				</Text>
-			</Flex>
-			<Flex flexDir="column" w="45%">
-				<Image data-aos="zoom-in" src={OfferSectionImage} h="100%" w="100%" />
 			</Flex>
 		</Flex>
 	);
