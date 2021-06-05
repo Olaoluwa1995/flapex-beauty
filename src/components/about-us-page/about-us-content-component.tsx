@@ -18,21 +18,41 @@ const Content = () => {
 	}, []);
 
 	return (
-		<Flex px="15%" pt="12rem" flexDir="column" w="100%" bgColor="#fdfdfd">
-			<Text color={COLORS.PRIMARY_COLOR} fontSize="2rem">
+		<Flex
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			pt="12rem"
+			flexDir="column"
+			fontSize={{ base: "0.9rem", sm: "1rem" }}
+			w="100%"
+			bgColor="#fdfdfd">
+			<Text
+				color={COLORS.PRIMARY_COLOR}
+				fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2rem" }}>
 				About Us
 			</Text>
-			<Flex w="100%" justify="space-between" h="42rem" mt="1rem" align="center">
-				<Flex w="45%" h="90%">
+			<Flex
+				flexDir={{ base: "column", lg: "row" }}
+				w="100%"
+				justify="space-between"
+				minH="32rem"
+				mt="1rem"
+				align="center">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={JanetImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" py="5%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					py="5%"
+					h="100%"
+					justify="space-between">
 					<Text>
 						Hi, I’m Janet and welcome to our About Us page where you can find
 						out a little bit more about the brilliant girls who work at the
@@ -72,22 +92,29 @@ const Content = () => {
 			</Flex>
 			<Flex
 				w="100%"
+				flexDir={{ base: "column", lg: "row" }}
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={LynzieImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" py="5%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					py="5%"
+					h="100%"
+					justify="space-between">
 					<Text>
 						First up is{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -116,23 +143,30 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
+				flexDir={{ base: "column", lg: "row" }}
 				w="100%"
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={AmyImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" py="5%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					py="5%"
+					h="100%"
+					justify="space-between">
 					<Text>
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
 							Amy
@@ -159,23 +193,30 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
+				flexDir={{ base: "column", lg: "row" }}
 				w="100%"
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={BeckieImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" py="5%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					py="5%"
+					h="100%"
+					justify="space-between">
 					<Text>
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
 							Beckie
@@ -200,25 +241,27 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
+				flexDir={{ base: "column", lg: "row" }}
 				w="100%"
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={JennyImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
-					w="50%"
+					w={{ base: "100%", lg: "50%" }}
 					pt="4%"
 					pb="3%"
 					h="100%"
@@ -253,23 +296,30 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
+				flexDir={{ base: "column", lg: "row" }}
 				w="100%"
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={ChloeImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" py="5%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					py="5%"
+					h="100%"
+					justify="space-between">
 					<Text>
 						Introducing{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -296,23 +346,30 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
+				flexDir={{ base: "column", lg: "row" }}
 				w="100%"
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={AliciaImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" py="5%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					py="5%"
+					h="100%"
+					justify="space-between">
 					<Text>
 						Our lovely{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -339,25 +396,27 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
+				flexDir={{ base: "column", lg: "row" }}
 				w="100%"
 				justify="space-between"
-				h="35rem"
+				minH="32rem"
 				bgColor="#eac8c5"
 				px="1.8rem"
 				mt="2rem"
 				align="center">
-				<Flex w="45%" h="90%">
+				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
 						data-aos="zoom-in"
 						src={KatelynImage}
 						w="100%"
+						mt={{ base: "2rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
-					w="50%"
+					w={{ base: "100%", lg: "50%" }}
 					pt="5%"
 					pb="15%"
 					h="100%"

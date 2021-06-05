@@ -14,7 +14,6 @@ import {
 	Text,
 	Flex,
 	List,
-	ListIcon,
 	ListItem,
 	Menu,
 	MenuList,
@@ -35,7 +34,7 @@ const HeaderContent = () => {
 		<>
 			<Flex
 				px={{ base: "5%", xl: "10%" }}
-				py="1rem"
+				py={{ base: "0.5rem", lg: "1rem" }}
 				bgColor={COLORS.PRIMARY_COLOR}
 				align="center">
 				<Icon as={FaPhoneAlt} color="white" />
@@ -54,7 +53,7 @@ const HeaderContent = () => {
 				align="center"
 				justify="space-between"
 				px={{ base: "5%", xl: "10%" }}
-				py="1rem">
+				py={{ base: "0.5rem", lg: "1rem" }}>
 				<Flex w={{ base: "40%", md: "30%", lg: "20%" }}>
 					<Image src={Logo} w="100%" h={{ base: "3rem", lg: "4rem" }} />
 				</Flex>
