@@ -18,15 +18,33 @@ const Content = () => {
 			<Flex
 				w="100%"
 				justify="space-between"
-				px="15%"
-				pt="12rem"
+				px={{ base: "5%", md: "10%", lg: "15%" }}
+				fontSize={{ base: "0.8rem", md: "0.9rem", lg: "1rem" }}
+				pt={{ base: "8rem", md: "10rem", lg: "12rem" }}
 				bgColor="white">
-				<Flex flexDir="column" w="68%">
-					<Text color={COLORS.PRIMARY_COLOR} fontSize="2rem">
+				<Flex flexDir="column" w={{ base: "100%", lg: "68%" }}>
+					<Text
+						color={COLORS.PRIMARY_COLOR}
+						fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2rem" }}>
 						Online Appointment Bookings
 					</Text>
-					<Flex w="100%" h="15rem" mt="2rem" justify="space-between">
-						<Flex flexDir="column" w="50%" justify="space-between">
+					<Flex
+						flexDir={{ base: "column", lg: "row-reverse" }}
+						w="100%"
+						minH="15rem"
+						mt="2rem"
+						justify="space-between">
+						<Image
+							src={AppointmentImage}
+							w={{ base: "100%", lg: "45%" }}
+							h={{ base: "100%", lg: "15rem" }}
+							boxShadow="0 8px 8px 0 gray"
+						/>
+						<Flex
+							flexDir="column"
+							mt={{ base: "2rem", lg: "none" }}
+							w={{ base: "100%", lg: "50%" }}
+							justify="space-between">
 							<Text>
 								If you’d like to make a hairdressing appointment then please
 								complete the{" "}
@@ -44,12 +62,6 @@ const Content = () => {
 								which only involves adding your name, email and phone number.
 							</Text>
 						</Flex>
-						<Image
-							src={AppointmentImage}
-							w="45%"
-							h="100%"
-							boxShadow="0 8px 8px 0 gray"
-						/>
 					</Flex>
 					<Text mt="2rem">
 						When you first create an online account we will send a one-time
@@ -91,7 +103,7 @@ const Content = () => {
 						in Brighouse and we look forward to seeing you again soon.
 					</Text>
 				</Flex>
-				<Flex w="25%" h="25rem">
+				<Flex d={{ base: "none", lg: "flex" }} w="25%" h="25rem">
 					<Image
 						src={OnlineBookingsImage}
 						w="100%"
@@ -113,7 +125,7 @@ const Content = () => {
 			<Flex
 				flexDir="column"
 				w="100%"
-				px="15%"
+				px={{ base: "5%", md: "10%", lg: "15%" }}
 				minH="25rem"
 				justify="center"
 				bgColor="transparent">
@@ -121,11 +133,20 @@ const Content = () => {
 					data-aos="zoom-in"
 					flexDir="column"
 					h="15rem"
+					justify="space-between"
 					bgColor="rgba(125,5,63,0.8)"
 					w="100%"
 					py="5%"
 					align="center">
-					<Text fontSize="2rem" color="white">
+					<Text
+						textAlign="center"
+						fontSize={{
+							base: "1.2rem",
+							sm: "1.5rem",
+							md: "1.8rem",
+							lg: "2rem",
+						}}
+						color="white">
 						Book Your Next Hair Appointment Now!
 					</Text>
 					<LinkItem
@@ -138,21 +159,25 @@ const Content = () => {
 						isAnchor
 						url="https://book.thesalon.app/salon/fa75b62e-1382-43e3-adf0-3853f2bf7038">
 						<Button
-							h="3.5rem"
-							fontSize="1.3rem"
+							h={{ base: "2.5rem", lg: "3.5rem" }}
+							fontSize={{ base: "1rem", md: "1.1rem", lg: "1.3rem" }}
 							border="1px solid white"
 							fontWeight="normal"
 							_hover={{
 								bgColor: "none",
 							}}
-							w="20rem"
+							w={{ base: "15rem", md: "18rem", lg: "20rem" }}
 							bgColor="#5e5e5e">
 							Appointment Enquiry
 						</Button>
 					</LinkItem>
 				</Flex>
 			</Flex>
-			<Flex pt="3rem" px="15%" h="45rem" bgColor="white">
+			<Flex
+				pt="3rem"
+				px={{ base: "5%", md: "10%", lg: "15%" }}
+				h="45rem"
+				bgColor="white">
 				<Image src={MapImage} h="90%" w="100%" />
 			</Flex>
 		</>
