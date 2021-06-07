@@ -176,7 +176,7 @@ const Content = () => {
 			<Flex
 				pt="3rem"
 				px={{ base: "5%", md: "10%", lg: "15%" }}
-				h="45rem"
+				h={{ base: "20rem", md: "30rem", lg: "45rem" }}
 				bgColor="white">
 				<Image src={MapImage} h="90%" w="100%" />
 			</Flex>

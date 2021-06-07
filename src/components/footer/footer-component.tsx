@@ -25,8 +25,9 @@ const Footer = () => {
 				pt={{ base: "1rem", md: "2rem", lg: "3rem" }}
 				bgColor="#515151"
 				w="100%"
-				minH="33rem">
+				h="33rem">
 				<Flex
+					h="100%"
 					w="100%"
 					flexDir={{ base: "column", lg: "row" }}
 					px={{ base: "5%", lg: "15%" }}
@@ -140,6 +141,7 @@ const Footer = () => {
 					</Flex>
 				</Flex>
 				<Flex
+					h="5rem"
 					w="100%"
 					px={{ base: "5%", md: "10%", lg: "15%" }}
 					align="center"
@@ -148,10 +150,10 @@ const Footer = () => {
 						sm: "0.65rem",
 						md: "0.7rem",
 						lg: "0.75rem",
-						xl: "85rem",
+						xl: "0.85rem",
 					}}
 					py={{ base: "0.8rem", lg: "1rem" }}
-					bgColor="rgba(0,0,0,.32)"
+					bgColor="black"
 					color="whiteAlpha.400">
 					<Flex w="80%">
 						<Text>

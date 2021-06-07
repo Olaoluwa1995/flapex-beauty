@@ -20,7 +20,11 @@ const Location = () => {
 					mb={{ base: "1rem", lg: "2rem" }}>
 					Location
 				</Text>
-				<Image src={MapImage} h="90%" w="100%" />
+				<Image
+					src={MapImage}
+					h={{ base: "20rem", md: "30rem", lg: "45rem" }}
+					w="100%"
+				/>
 			</Flex>
 		</Flex>
 	);
