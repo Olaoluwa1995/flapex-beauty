@@ -14,10 +14,13 @@ import ContactUsPage from "./pages/contact-us/contact-us";
 import TermsPage from "./pages/terms/terms";
 import PrivacyPage from "./pages/privacy/privacy";
 
+import ScrollButton from "./components/scroll-to-top-button/scroll-to-top-button.component";
+
 const App = () => {
 	return (
 		<ChakraProvider theme={{ ...theme, ...customTheme }}>
 			<CSSReset />
+			<ScrollButton />
 			<Switch>
 				<Route exact path="/" component={WelcomePage} />
 				<Route exact path="/about-us" component={AboutUsPage} />

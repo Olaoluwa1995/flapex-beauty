@@ -25,7 +25,7 @@ const Footer = () => {
 				pt={{ base: "1rem", md: "2rem", lg: "3rem" }}
 				bgColor="#515151"
 				w="100%"
-				h="33rem">
+				minH="33rem">
 				<Flex
 					h="100%"
 					w="100%"
