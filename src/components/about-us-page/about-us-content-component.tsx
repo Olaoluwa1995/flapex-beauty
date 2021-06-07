@@ -39,7 +39,6 @@ const Content = () => {
 				align="center">
 				<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 					<Image
-						data-aos="zoom-in"
 						src={JanetImage}
 						w="100%"
 						mt={{ base: "2rem", lg: "none" }}

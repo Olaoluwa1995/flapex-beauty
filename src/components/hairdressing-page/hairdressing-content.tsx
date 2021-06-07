@@ -43,7 +43,6 @@ const Content = () => {
 						w={{ base: "100%", lg: "45%" }}
 						h={{ base: "80%", lg: "30rem" }}>
 						<Image
-							data-aos="zoom-in"
 							src={HairdressingImage}
 							w="100%"
 							h="100%"
