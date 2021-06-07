@@ -22,9 +22,10 @@ const Content = () => {
 	return (
 		<Flex
 			flexDir="column"
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			fontSize={{ base: "0.8rem", md: "0.9rem", lg: "1rem" }}
 			w="100%"
 			justify="space-between"
-			px="15%"
 			pt="12rem"
 			bgColor="white">
 			<Flex
@@ -36,7 +37,7 @@ const Content = () => {
 				px="5%">
 				<Text
 					mt="2rem"
-					fontSize="1.8rem"
+					fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2rem" }}
 					fontWeight="bold"
 					textAlign="center"
 					color={COLORS.PRIMARY_COLOR}>
@@ -55,11 +56,18 @@ const Content = () => {
 				<Text mb="2rem">Until then, take care.</Text>
 			</Flex>
 			<Flex flexDir="column" mt="3rem">
-				<Text color={COLORS.PRIMARY_COLOR} fontSize="2rem">
+				<Text color={COLORS.PRIMARY_COLOR} fontSize="1.8rem">
 					Pamper Parties
 				</Text>
-				<Flex w="100%" justify="space-between" h="25rem" align="center">
-					<Flex w="45%" h="80%">
+				<Flex
+					w="100%"
+					flexDir={{ base: "column", lg: "row" }}
+					justify="space-between"
+					minH="28rem"
+					align="center">
+					<Flex
+						w={{ base: "100%", lg: "45%" }}
+						h={{ base: "100%", lg: "20rem" }}>
 						<Image
 							data-aos="zoom-in"
 							src={PamperPartyImage}
@@ -71,8 +79,9 @@ const Content = () => {
 					<Flex
 						data-aos="zoom-in"
 						flexDir="column"
-						w="50%"
-						h="100%"
+						mt={{ base: "2rem", lg: "none" }}
+						w={{ base: "100%", lg: "50%" }}
+						h={{ base: "100%", lg: "28rem", xl: "25rem" }}
 						justify="space-between">
 						<Text>
 							Whether it’s to celebrate a birthday, or it’s just a extra special
@@ -112,7 +121,7 @@ const Content = () => {
 				bgColor="#eac8c5"
 				height="20rem"
 				width="100%"
-				mt="5rem">
+				mt={{ base: "3rem", md: "4rem", lg: "5rem" }}>
 				<Flex pos="absolute" top="-10px" ml="45%">
 					<Icon as={BsChatQuote} fontSize="2.2rem" />
 				</Flex>
@@ -135,21 +144,26 @@ const Content = () => {
 				</Flex>
 			</Flex>
 			<Flex
-				h="23rem"
-				flexDir="row-reverse"
+				minH="23rem"
+				flexDir={{ base: "column", lg: "row-reverse" }}
 				w="100%"
 				justify="space-between"
-				mt="4rem">
-				<Flex w="48%" h="100%">
+				mt={{ base: "2rem", md: "3rem", lg: "4rem" }}>
+				<Flex w={{ base: "100%", lg: "48%" }} h="100%">
 					<Image
 						data-aos="zoom-in"
 						src={SittingRoomImage}
 						w="100%"
-						h="100%"
+						h={{ base: "100%", lg: "23rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="45%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "45%" }}
+					h={{ base: "100%", lg: "20rem" }}
+					mt={{ base: "2rem", lg: "none" }}
+					justify="space-between">
 					<Text>
 						With our{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -171,17 +185,27 @@ const Content = () => {
 					</Flex>
 				</Flex>
 			</Flex>
-			<Flex h="23rem" w="100%" justify="space-between" mt="4rem">
-				<Flex w="48%" h="100%">
+			<Flex
+				minH="23rem"
+				flexDir={{ base: "column", lg: "row" }}
+				w="100%"
+				justify="space-between"
+				mt={{ base: "2rem", md: "3rem", lg: "4rem" }}>
+				<Flex w={{ base: "100%", lg: "48%" }} h="100%">
 					<Image
 						data-aos="zoom-in"
+						h={{ base: "100%", lg: "23rem" }}
 						src={LittleAngelsImage}
 						w="100%"
-						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="45%" h="100%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "45%" }}
+					h={{ base: "100%", lg: "20rem" }}
+					mt={{ base: "2rem", lg: "none" }}
+					justify="space-between">
 					<Text>
 						We have hats, tiaras, feather boa’s – and an ideal spot for the
 						perfect party pose and photo’s with all your friends when we’ve
@@ -244,17 +268,26 @@ const Content = () => {
 					</Flex>
 				</Flex>
 			</Flex>
-			<Flex justify="space-between" h="30rem" w="100%" mt="4rem">
-				<Flex w="30%" h="100%">
+			<Flex
+				flexDir={{ base: "column", lg: "row" }}
+				justify="space-between"
+				minH="30rem"
+				w="100%"
+				mt={{ base: "2rem", md: "3rem", lg: "4rem" }}>
+				<Flex w={{ base: "100%", lg: "30%" }} h="100%">
 					<Image
 						data-aos="zoom-in"
 						src={PromPrincessImage}
 						w="100%"
-						h="100%"
+						h={{ base: "100%", lg: "30rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="65%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "65%" }}
+					mt={{ base: "2rem", lg: "none" }}
+					justify="space-between">
 					<Text>
 						With our{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -291,17 +324,26 @@ const Content = () => {
 					</Flex>
 				</Flex>
 			</Flex>
-			<Flex justify="space-between" h="25rem" w="100%" mt="4rem">
-				<Flex w="45%" h="100%">
+			<Flex
+				flexDir={{ base: "column", lg: "row" }}
+				justify="space-between"
+				minH="25rem"
+				w="100%"
+				mt={{ base: "2rem", md: "3rem", lg: "4rem" }}>
+				<Flex w={{ base: "100%", lg: "45%" }} h="100%">
 					<Image
 						data-aos="zoom-in"
 						src={WeddingPackagesImage}
 						w="100%"
-						h="100%"
+						h={{ base: "100%", lg: "25rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="50%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "50%" }}
+					mt={{ base: "2rem", lg: "none" }}
+					justify="space-between">
 					<Text>
 						The first of our{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -331,20 +373,24 @@ const Content = () => {
 			</Flex>
 			<Flex
 				justify="space-between"
-				flexDir="row-reverse"
-				h="30rem"
+				flexDir={{ base: "column", lg: "row-reverse" }}
+				minH="30rem"
 				w="100%"
-				mt="4rem">
-				<Flex w="30%" h="100%">
+				mt={{ base: "2rem", md: "3rem", lg: "4rem" }}>
+				<Flex w={{ base: "100%", lg: "30%" }} h="100%">
 					<Image
 						data-aos="zoom-in"
 						src={WeddingHairImage}
 						w="100%"
-						h="100%"
+						h={{ base: "100%", lg: "30rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
-				<Flex flexDir="column" w="65%" justify="space-between">
+				<Flex
+					flexDir="column"
+					w={{ base: "100%", lg: "65%" }}
+					mt={{ base: "2rem", lg: "none" }}
+					justify="space-between">
 					<Text>
 						And as the day gets closer, we can tailor make any{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -370,7 +416,16 @@ const Content = () => {
 						– so the pricing will depend on which treatments you would like to
 						have.
 					</Text>
-                    <Text><Box as="span" fontWeight="bold" color="red">To Book Your Pamper Party</Box>, or for more information… simply <Box as="span" color={COLORS.PRIMARY_COLOR}>Contact Us</Box> now – everyone deserves a little pampering every now and then…</Text>
+					<Text>
+						<Box as="span" fontWeight="bold" color="red">
+							To Book Your Pamper Party
+						</Box>
+						, or for more information… simply{" "}
+						<Box as="span" color={COLORS.PRIMARY_COLOR}>
+							Contact Us
+						</Box>{" "}
+						now – everyone deserves a little pampering every now and then…
+					</Text>
 				</Flex>
 			</Flex>
 		</Flex>
