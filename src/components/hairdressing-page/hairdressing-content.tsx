@@ -20,13 +20,28 @@ const Content = () => {
 	}, []);
 
 	return (
-		<Flex px="15%" pt="12rem" flexDir="column" w="100%">
+		<Flex
+			px={{ base: "5%", md: "10%", lg: "15%" }}
+			pt={{ base: "8rem", lg: "12rem" }}
+			fontSize={{ base: "0.9rem", md: "1rem", lg: "1.1rem" }}
+			flexDir="column"
+			w="100%">
 			<Flex flexDir="column">
-				<Text color={COLORS.PRIMARY_COLOR} fontSize="2rem">
+				<Text
+					color={COLORS.PRIMARY_COLOR}
+					fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2rem" }}>
 					Hairdressing
 				</Text>
-				<Flex w="100%" justify="space-between" h="30rem" align="center">
-					<Flex w="45%" h="80%">
+				<Flex
+					flexDir={{ base: "column", lg: "row" }}
+					w="100%"
+					mt={{ base: "1rem", lg: "none" }}
+					justify="space-between"
+					minH="30rem"
+					align="center">
+					<Flex
+						w={{ base: "100%", lg: "45%" }}
+						h={{ base: "80%", lg: "30rem" }}>
 						<Image
 							data-aos="zoom-in"
 							src={HairdressingImage}
@@ -38,8 +53,9 @@ const Content = () => {
 					<Flex
 						data-aos="zoom-in"
 						flexDir="column"
-						w="50%"
-						h="100%"
+						w={{ base: "100%", lg: "50%" }}
+						h={{ base: "100%", lg: "30rem" }}
+						mt={{ base: "1rem", lg: "none" }}
 						justify="space-between">
 						<Text>
 							All services include an initial consultation, hair and scalp
@@ -77,7 +93,11 @@ const Content = () => {
 					</Flex>
 				</Flex>
 			</Flex>
-			<Text color={COLORS.PRIMARY_COLOR} fontStyle="italic" mt="3rem" mb="4rem">
+			<Text
+				color={COLORS.PRIMARY_COLOR}
+				fontStyle="italic"
+				mt={{ base: "1rem", md: "2rem", lg: "3rem" }}
+				mb={{ base: "1.5rem", md: "2.5rem", lg: "4rem" }}>
 				All our hairdressing prices are based on having short to medium length
 				hair. We do charge more for long hair depending upon time and product
 				used. This can be discussed with your stylist in the salon. If booking
@@ -87,17 +107,25 @@ const Content = () => {
 				<Text color={COLORS.PRIMARY_COLOR} fontSize="1.5rem" mb="1rem">
 					ladies cuts & styling
 				</Text>
-				<Flex w="100%" justify="space-between" h="22rem">
-					<Flex w="45%" h="90%">
+				<Flex
+					flexDir={{ base: "column", lg: "row" }}
+					w="100%"
+					justify="space-between"
+					minH="22rem">
+					<Flex w={{ base: "100%", lg: "45%" }} h="90%">
 						<Image
 							data-aos="zoom-in"
 							src={StylingImage}
 							w="100%"
-							h="100%"
+							h={{ base: "100%", lg: "25rem" }}
 							boxShadow="0 8px 8px 0 gray"
 						/>
 					</Flex>
-					<Flex flexDir="column" w="50%" h="100%">
+					<Flex
+						flexDir="column"
+						w={{ base: "100%", lg: "50%" }}
+						mt={{ base: "1rem", lg: "none" }}
+						h="100%">
 						<Text>restyle – £43</Text>
 						<Text>cut & blow-dry – £39</Text>
 						<Text>dry cut – £20</Text>
@@ -126,22 +154,31 @@ const Content = () => {
 			<Flex flexDir="column" mt="2rem">
 				<Text
 					color={COLORS.PRIMARY_COLOR}
-					ml="auto"
+					ml={{ base: "none", lg: "auto" }}
 					fontSize="1.5rem"
 					mb="1rem">
 					colouring*
 				</Text>
-				<Flex flexDir="row-reverse" w="100%" justify="space-between" h="25rem">
-					<Flex w="45%" h="100%">
+				<Flex
+					flexDir={{ base: "column", lg: "row-reverse" }}
+					w="100%"
+					justify="space-between"
+					minH="25rem">
+					<Flex w={{ base: "100%", lg: "45%" }} h="100%">
 						<Image
 							data-aos="zoom-in"
 							src={ColouringImage}
 							w="100%"
-							h="100%"
+							h={{ base: "100%", lg: "25rem" }}
 							boxShadow="0 8px 8px 0 gray"
 						/>
 					</Flex>
-					<Flex flexDir="column" justify="space-between" w="50%" h="100%">
+					<Flex
+						flexDir="column"
+						mt={{ base: "1rem", lg: "none" }}
+						justify="space-between"
+						w={{ base: "100%", lg: "50%" }}
+						h="100%">
 						<Flex h="100%" flexDir="column" justify="space-between">
 							<Text>full head – £35</Text>
 							<Text>roots – £26</Text>
@@ -152,7 +189,7 @@ const Content = () => {
 							<Text>de-colour – £15</Text>
 							<Text>Olaplex™ colour treatment – £20 extra</Text>
 						</Flex>
-						<Text mt="2rem">
+						<Text mt={{ base: "1rem", lg: "2rem" }}>
 							* With any colouring service the price does not include Cut or
 							Blow Dry and we advise you to have a skin test 48 hours before any
 							tinting process
@@ -164,11 +201,24 @@ const Content = () => {
 				<Text color={COLORS.PRIMARY_COLOR} fontSize="1.5rem" mb="1rem">
 					OLAPLEX™ treatments
 				</Text>
-				<Flex flexDir="row-reverse" w="100%" justify="space-between" h="20rem">
-					<Flex w="45%" h="90%">
-						<Image src={TreatmentImage} w="100%" h="100%" />
+				<Flex
+					flexDir={{ base: "column", lg: "row-reverse" }}
+					w="100%"
+					justify="space-between"
+					minH="20rem">
+					<Flex w={{ base: "100%", lg: "45%" }} h="90%">
+						<Image
+							src={TreatmentImage}
+							w="100%"
+							h={{ base: "100%", lg: "20rem" }}
+						/>
 					</Flex>
-					<Flex flexDir="column" justify="space-between" w="50%" h="100%">
+					<Flex
+						flexDir="column"
+						mt={{ base: "1rem", lg: "none" }}
+						justify="space-between"
+						w={{ base: "100%", lg: "50%" }}
+						h="100%">
 						<Text>
 							<Box as="span" color={COLORS.PRIMARY_COLOR} fontWeight="bold">
 								OLAPLEX™
@@ -193,17 +243,25 @@ const Content = () => {
 				<Text color={COLORS.PRIMARY_COLOR} fontSize="1.5rem" mb="1rem">
 					men's haircutting
 				</Text>
-				<Flex w="100%" justify="space-between" h="22rem">
-					<Flex w="45%" h="100%">
+				<Flex
+					flexDir={{ base: "column", lg: "row" }}
+					w="100%"
+					justify="space-between"
+					minH="22rem">
+					<Flex w={{ base: "100%", lg: "45%" }} h="100%">
 						<Image
 							data-aos="zoom-in"
 							src={HairCuttingImage}
 							w="100%"
-							h="100%"
+							h={{ base: "100%", lg: "25rem" }}
 							boxShadow="0 8px 8px 0 gray"
 						/>
 					</Flex>
-					<Flex flexDir="column" w="50%" h="100%">
+					<Flex
+						flexDir="column"
+						w={{ base: "100%", lg: "50%" }}
+						mt={{ base: "1rem", lg: "none" }}
+						h="100%">
 						<Text my="1rem">wash & cut – £13</Text>
 						<Text mb="1rem">dry cut – £10</Text>
 						<Text mb="1rem">colour – from £30</Text>
@@ -214,22 +272,30 @@ const Content = () => {
 			<Flex flexDir="column" mt="3rem">
 				<Text
 					color={COLORS.PRIMARY_COLOR}
+					ml={{ base: "none", lg: "auto" }}
 					fontSize="1.5rem"
-					mb="1rem"
-					ml="auto">
+					mb="1rem">
 					little angels
 				</Text>
-				<Flex flexDir="row-reverse" w="100%" justify="space-between" h="22rem">
-					<Flex w="45%" h="100%">
+				<Flex
+					flexDir={{ base: "column", lg: "row-reverse" }}
+					w="100%"
+					justify="space-between"
+					minH="22rem">
+					<Flex w={{ base: "100%", lg: "45%" }} h="100%">
 						<Image
 							data-aos="zoom-in"
 							src={LittleAngelsImage}
 							w="100%"
-							h="100%"
+							h={{ base: "100%", lg: "25rem" }}
 							boxShadow="0 8px 8px 0 gray"
 						/>
 					</Flex>
-					<Flex flexDir="column" w="50%" h="100%">
+					<Flex
+						flexDir="column"
+						mt={{ base: "1rem", lg: "none" }}
+						w={{ base: "100%", lg: "50%" }}
+						h="100%">
 						<Text mb="1.5rem">0 -5 years wet cut – £8</Text>
 						<Text mb="1.5rem">6 – 12 years wet cut – £10</Text>
 						<Text mb="1.5rem">cut and blow dry – £30</Text>
@@ -246,31 +312,38 @@ const Content = () => {
 				<Text my="1rem">
 					Park Row are here for all your special event and party needs…
 				</Text>
-				<Flex w="100%" justify="space-between" h="30rem">
+				<Flex
+					w="100%"
+					flexDir={{ base: "column", lg: "row" }}
+					justify="space-between"
+					minH="20rem">
 					<Image
 						data-aos="fade-right"
 						src={WeddingImage}
-						w="30%"
+						w={{ base: "100%", lg: "30%" }}
+						mt={{ base: "1rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 					<Image
 						data-aos="fade-down"
 						src={PromImage}
-						w="30%"
+						w={{ base: "100%", lg: "30%" }}
+						mt={{ base: "1rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 					<Image
 						data-aos="fade-left"
 						src={SpecialEventImage}
-						w="30%"
+						w={{ base: "100%", lg: "30%" }}
+						mt={{ base: "1rem", lg: "none" }}
 						h="100%"
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 			</Flex>
-			<Text py="4rem">
+			<Text py="3rem">
 				<Box as="span" fontWeight="bold">
 					Contact us now on 01484 722220
 				</Box>{" "}
@@ -283,12 +356,26 @@ const Content = () => {
 					it’s all about you…
 				</Box>
 			</Text>
-			<Flex w="100%" py="5%" justify="space-between" bgColor="white">
-				<Flex pos="relative" bgColor="#eac8c5" height="25rem" width="30%">
+			<Flex
+				w="100%"
+				flexDir={{ base: "column", lg: "row" }}
+				fontSize={{ base: "0.9rem", md: "1rem", lg: "0.9rem", xl: "1rem" }}
+				py="5%"
+				justify="space-between"
+				bgColor="white">
+				<Flex
+					pos="relative"
+					mt={{ base: "1rem", lg: "none" }}
+					bgColor="#eac8c5"
+					height={{ base: "18rem", sm: "15rem", md: "13rem", lg: "25rem" }}
+					w={{ base: "100%", lg: "30%" }}>
 					<Flex pos="absolute" top="-10px" ml="45%">
 						<Icon as={BsChatQuote} fontSize="2.2rem" />
 					</Flex>
-					<Flex flexDir="column" justify="space-between" padding="2rem">
+					<Flex
+						flexDir="column"
+						justify="space-between"
+						p={{ base: "1rem", sm: "2rem", lg: "1rem", xl: "2rem" }}>
 						<Text mt="1rem">
 							This place is amazing!! I’ve had my hair cut by Beckie and she’s
 							done an amazing job with my hair! I’ve got really fine hair but
@@ -299,11 +386,19 @@ const Content = () => {
 						<Text fontWeight="bold">Marie Sallis</Text>
 					</Flex>
 				</Flex>
-				<Flex pos="relative" bgColor="#eac8c5" height="27rem" width="30%">
+				<Flex
+					pos="relative"
+					mt={{ base: "1rem", lg: "none" }}
+					bgColor="#eac8c5"
+					height={{ base: "21rem", sm: "17rem", md: "17rem", lg: "27rem" }}
+					w={{ base: "100%", lg: "30%" }}>
 					<Flex pos="absolute" top="-10px" ml="45%">
 						<Icon as={BsChatQuote} fontSize="2.2rem" />
 					</Flex>
-					<Flex flexDir="column" justify="space-between" padding="2rem">
+					<Flex
+						flexDir="column"
+						justify="space-between"
+						p={{ base: "1rem", sm: "2rem", lg: "1rem", xl: "2rem" }}>
 						<Text my="1rem">
 							Great haircuts, colours and beauty treatments – at a reasonable
 							price. Also lovely friendly helpful staff.
@@ -317,11 +412,19 @@ const Content = () => {
 						<Text fontWeight="bold">Pam Fellows</Text>
 					</Flex>
 				</Flex>
-				<Flex pos="relative" bgColor="#eac8c5" height="25rem" width="30%">
+				<Flex
+					pos="relative"
+					mt={{ base: "1rem", lg: "none" }}
+					bgColor="#eac8c5"
+					height={{ base: "18rem", sm: "15rem", md: "13rem", lg: "25rem" }}
+					w={{ base: "100%", lg: "30%" }}>
 					<Flex pos="absolute" top="-10px" ml="45%">
 						<Icon as={BsChatQuote} fontSize="2.2rem" />
 					</Flex>
-					<Flex flexDir="column" justify="space-between" padding="2rem">
+					<Flex
+						flexDir="column"
+						justify="space-between"
+						p={{ base: "1rem", sm: "2rem", lg: "1rem", xl: "2rem" }}>
 						<Text mt="1rem">
 							First time I visited today, I walked through the door (no appt!)
 							and literally said “help me” to the poor hairdresser! Well help me
