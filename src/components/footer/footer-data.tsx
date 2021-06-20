@@ -57,37 +57,37 @@ export const timeData: TimeProps[] = [
 	{
 		key: 1,
 		day: "Monday",
-		time: "Closed",
+		time: "8am to 8pm",
 	},
 	{
 		key: 2,
 		day: "Tuesday",
-		time: "9.00 - 17.30",
+		time: "8am to 8pm",
 	},
 	{
 		key: 3,
 		day: "Wednesday",
-		time: "9.00 - 17.30",
+		time: "8am to 8pm",
 	},
 	{
 		key: 4,
 		day: "Thursday",
-		time: "9.00 - 20.00",
+		time: "8am to 8pm",
 	},
 	{
 		key: 5,
 		day: "Friday",
-		time: "9.00 - 18.00",
+		time: "8am to 8pm",
 	},
 	{
 		key: 6,
 		day: "Saturday",
-		time: "8.30 - 16.00",
+		time: "7am to 10pm",
 	},
 	{
 		key: 7,
 		day: "Sunday",
-		time: "Closed",
+		time: "3pm to 8pm",
 	},
 ];
 
@@ -119,10 +119,10 @@ export const contactData: ContactProps[] = [
 	},
 	{
 		key: 6,
-		text: "01484 722220",
+		text: "+234 818 005 5097",
 	},
 	{
 		key: 7,
-		text: "park-row@hotmail.com",
+		text: "info@flapex.org",
 	},
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Flex, Text, ListItem, UnorderedList } from "@chakra-ui/react";
 
-import LinkItem from "../../components/link-item/link-item.component";
+import NavLinkItem from "../../components/link-item/header-links.component";
 import { BoxShadow, COLORS } from "../../styles/theme";
 import { safetyMeasuresData } from "./safety-measures-data";
 
@@ -45,15 +45,14 @@ const SafetyMeasure = () => {
 					Thank you for supporting us during this time and we look forward to
 					seeing you soon 🙂
 				</Text>
-				<LinkItem
+				<NavLinkItem
 					my="1.5rem"
 					color="white"
 					_hover={{
 						bgColor: "none",
 					}}
 					mx="auto"
-					isAnchor
-					url="https://parkrowhairandbeauty.com/appointment-enquiry/">
+					url="/online-bookings">
 					<Button
 						h={{ base: "2.3rem", md: "2.8rem", lg: "3.5rem" }}
 						fontSize={{
@@ -70,7 +69,7 @@ const SafetyMeasure = () => {
 						bgColor={COLORS.PRIMARY_COLOR}>
 						Appointment Enquiry
 					</Button>
-				</LinkItem>
+				</NavLinkItem>
 			</Flex>
 		</Flex>
 	);

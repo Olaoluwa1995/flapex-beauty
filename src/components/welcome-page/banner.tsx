@@ -34,7 +34,7 @@ const Banner = () => {
 						fontSize={{ base: "2rem", sm: "3rem", md: "4rem", lg: "5rem" }}
 						fontWeight="bold"
 						color="white">
-						PARK ROW
+						FLAPEX BEAUTY
 					</Text>
 					<Text
 						letterSpacing="widest"

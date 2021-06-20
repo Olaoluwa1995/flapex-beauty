@@ -41,16 +41,16 @@ const Content = () => {
 					<Image
 						src={JanetImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
 					w={{ base: "100%", lg: "50%" }}
-					py="5%"
-					h="100%"
+					py="3%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						Hi, I’m Janet and welcome to our About Us page where you can find
@@ -103,16 +103,16 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={LynzieImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
 					w={{ base: "100%", lg: "50%" }}
-					py="5%"
-					h="100%"
+					py="3%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						First up is{" "}
@@ -155,16 +155,16 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={AmyImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
 					w={{ base: "100%", lg: "50%" }}
-					py="5%"
-					h="100%"
+					py="3%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -205,16 +205,16 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={BeckieImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
 					w={{ base: "100%", lg: "50%" }}
-					py="5%"
-					h="100%"
+					py="3%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
@@ -253,8 +253,8 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={JennyImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
@@ -263,7 +263,7 @@ const Content = () => {
 					w={{ base: "100%", lg: "50%" }}
 					pt="4%"
 					pb="3%"
-					h="100%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						Introducing{" "}
@@ -308,16 +308,16 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={ChloeImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
 					w={{ base: "100%", lg: "50%" }}
-					py="5%"
-					h="100%"
+					py="3%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						Introducing{" "}
@@ -358,16 +358,16 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={AliciaImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
 				<Flex
 					flexDir="column"
 					w={{ base: "100%", lg: "50%" }}
-					py="5%"
-					h="100%"
+					py="3%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						Our lovely{" "}
@@ -408,8 +408,8 @@ const Content = () => {
 						data-aos="zoom-in"
 						src={KatelynImage}
 						w="100%"
-						mt={{ base: "2rem", lg: "none" }}
-						h="100%"
+						my={{ base: "2rem", lg: "none" }}
+						h={{ base: "100%", lg: "32rem" }}
 						boxShadow="0 8px 8px 0 gray"
 					/>
 				</Flex>
@@ -418,7 +418,7 @@ const Content = () => {
 					w={{ base: "100%", lg: "50%" }}
 					pt="5%"
 					pb="15%"
-					h="100%"
+					h={{ base: "100%", lg: "32rem" }}
 					justify="space-between">
 					<Text>
 						Our little{" "}

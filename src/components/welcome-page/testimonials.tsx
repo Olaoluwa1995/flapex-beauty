@@ -43,7 +43,7 @@ const TestimonialSection = () => {
 							justify="space-between"
 							padding={{ base: "1rem", sm: "2rem" }}>
 							<Text mt="2rem">
-								I have been going to Park Row Hair and Beauty for my hair
+								I have been going to Flapex Beauty for my hair
 								cutting for 17 years and, more recently, for my nails doing. I
 								wouldn’t go anywhere else. The girls are not only very
 								professional; they are so warm, welcoming and helpful. Wonderful
@@ -52,7 +52,7 @@ const TestimonialSection = () => {
 							<Text
 								textAlign={{ base: "center", lg: "justify" }}
 								fontWeight="bold">
-								Molly Varley
+								Tinu Agunbiade
 							</Text>
 						</Flex>
 					</Flex>
@@ -70,16 +70,16 @@ const TestimonialSection = () => {
 							justify="space-between"
 							padding={{ base: "1rem", sm: "2rem" }}>
 							<Text mt="2rem">
-								I have been a customer at Park Row for over twelve years and can
+								I have been a customer at Flapex for over twelve years and can
 								honestly say that every visit is a time I look forward to.
 								Fantastically friendly staff, great new premises and a real
 								commitment to making every customer enjoy their ‘me’ time. Thank
-								you Park Row – I’ll be back!
+								you Flapex – I’ll be back!
 							</Text>
 							<Text
 								textAlign={{ base: "center", lg: "justify" }}
 								fontWeight="bold">
-								Jill Wood
+								Sola Oyebola
 							</Text>
 						</Flex>
 					</Flex>
@@ -97,7 +97,7 @@ const TestimonialSection = () => {
 							justify="space-between"
 							padding={{ base: "1rem", lg: "2rem" }}>
 							<Text mt="2rem">
-								I found Park Row on the internet as it was close to where we
+								I found Flapex on the internet as it was close to where we
 								were staying for the wedding we attended. I have never been so
 								pleased with my hair… my make up was lovely too and lasted all
 								day, wish we could bring the girls down south with us. Once
@@ -106,7 +106,7 @@ const TestimonialSection = () => {
 							<Text
 								textAlign={{ base: "center", lg: "justify" }}
 								fontWeight="bold">
-								Maria Santaniello
+								Yemi Ojo
 							</Text>
 						</Flex>
 					</Flex>
@@ -139,7 +139,7 @@ const TestimonialSection = () => {
 								pleased I couldn’t thank her enough. Will definitely be going
 								back!
 							</Text>
-							<Text fontWeight="bold">Georgina Henley</Text>
+							<Text fontWeight="bold">Laide Olabode</Text>
 						</Flex>
 					</Flex>
 					<Flex
@@ -156,11 +156,11 @@ const TestimonialSection = () => {
 							padding={{ base: "1rem", lg: "2rem" }}>
 							<Text mt="2rem">
 								Fabulous place, really friendly & did a awesome job with my hair
-								after a disastrous hair cut at… another hairdresser who we wont
-								name here ! I will definitely be using Park Row for me and my
+								after a disastrous hair cut at… another hairdresser who we won't
+								name here! I will definitely be using Flapex for me and my
 								children from now on. Five stars from me!
 							</Text>
-							<Text fontWeight="bold">Sam Day</Text>
+							<Text fontWeight="bold">Tina Alfred</Text>
 						</Flex>
 					</Flex>
 				</Flex>

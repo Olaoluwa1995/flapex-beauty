@@ -174,8 +174,8 @@ const Content = () => {
 						marketing purposes or giving your information to third party
 						suppliers of products or services. If you no longer wish to be
 						contacted for marketing purposes, please contact Janet Brunskill,
-						Park Row Hair & Beauty Ltd, 20 Bradford Road, Brighouse, West
-						Yorkshire HD6 1RW.
+						Flapex Beauty Ltd, 20 Bradford Road, Brighouse, West Yorkshire HD6
+						1RW.
 					</Text>
 				</Flex>
 				<Flex w="100%" flexDir="column" mt="3rem">
@@ -224,7 +224,7 @@ const Content = () => {
 					</Text>
 					<Text mt="1rem">
 						Your information is stored within the European Economic Area on
-						secure servers provided by Park Row Hair & Beauty Ltd. Any payment
+						secure servers provided by Flapex Beauty Ltd. Any payment
 						transactions are encrypted. Sending information via the internet is
 						not completely secure, although we will do our best to protect your
 						information and prevent unauthorised access.
@@ -244,8 +244,8 @@ const Content = () => {
 					</Text>
 					<Text mt="1rem">
 						If you would like a copy of some or all of your personal
-						information, please contact Janet Brunskill, Park Row Hair & Beauty
-						Ltd, 20 Bradford Road, Brighouse, West Yorkshire HD6 1RW.{" "}
+						information, please contact Janet Brunskill, Flapex Beauty Ltd, 20
+						Bradford Road, Brighouse, West Yorkshire HD6 1RW.{" "}
 					</Text>
 					<Text mt="1rem">
 						We want to make sure that your personal information is accurate and
@@ -296,7 +296,7 @@ const Content = () => {
 						<ListItem>
 							By email{" "}
 							<Box as="span" color={COLORS.PRIMARY_COLOR}>
-								flapex@hotmail.com
+								info@flapex.org
 							</Box>
 						</ListItem>
 						<ListItem>
@@ -309,7 +309,7 @@ const Content = () => {
 						Commissioner’s Office. Find out on their website how to report a
 						concern:{" "}
 						<Box as="span" color={COLORS.PRIMARY_COLOR}>
-							www.ico.org.uk/concerns/handling
+							info@flapex.org
 						</Box>
 					</Text>
 				</Flex>
@@ -323,8 +323,8 @@ const Content = () => {
 						INTRODUCTION
 					</Text>
 					<Text mt="1rem">
-						This policy sets out what information Park Row Hair & Beauty Ltd
-						holds, how long we hold it for and when it will be deleted.
+						This policy sets out what information Flapex Beauty Ltd holds, how
+						long we hold it for and when it will be deleted.
 					</Text>
 					<Text mt="1rem">
 						It also covers the procedure to follow regarding data requests.
@@ -343,7 +343,7 @@ const Content = () => {
 						Commissioner’s Office. Find out on their website how to report a
 						concern:{" "}
 						<Box as="span" color={COLORS.PRIMARY_COLOR}>
-							www.ico.org.uk/concerns/handling
+							info@flapex.org
 						</Box>
 					</Text>
 				</Flex>

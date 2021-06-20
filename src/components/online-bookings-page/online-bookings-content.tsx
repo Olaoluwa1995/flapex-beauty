@@ -5,7 +5,7 @@ import Aos from "aos";
 import OnlineBookingsImage from "../../assets/images/welcome-page/welcome-note.png";
 import AppointmentImage from "../../assets/images/online-bookings-page/appointment.jpg";
 import BgImage from "../../assets/images/welcome-page/testimonials-background.jpg";
-import LinkItem from "../../components/link-item/link-item.component";
+import NavLinkItem from "../../components/link-item/header-links.component";
 import { COLORS } from "../../styles/theme";
 import MapImage from "../../assets/images/welcome-page/map.png";
 
@@ -13,6 +13,7 @@ const Content = () => {
 	React.useEffect(() => {
 		Aos.init({ duration: 1500, once: true });
 	}, []);
+
 	return (
 		<>
 			<Flex
@@ -80,7 +81,9 @@ const Content = () => {
 						If you have any problems whatsoever with the online booking form
 						then please do{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
-							get in touch.
+						<NavLinkItem color={COLORS.PRIMARY_COLOR} url="/book-appointment">
+								get in touch.
+							 </NavLinkItem>
 						</Box>
 					</Text>
 					<Text mt="2rem">
@@ -91,7 +94,9 @@ const Content = () => {
 						</Box>
 						. If you add your details{" "}
 						<Box as="span" fontWeight="bold" color={COLORS.PRIMARY_COLOR}>
-							HERE
+						<NavLinkItem color={COLORS.PRIMARY_COLOR} url="/book-appointment">
+								HERE
+							</NavLinkItem>
 						</Box>{" "}
 						we will text or email you if we have a cancellation.
 					</Text>
@@ -149,28 +154,23 @@ const Content = () => {
 						color="white">
 						Book Your Next Hair Appointment Now!
 					</Text>
-					<LinkItem
-						my="1.5rem"
-						color="white"
-						_hover={{
-							bgColor: "none",
-						}}
-						mx="auto"
-						isAnchor
-						url="https://book.thesalon.app/salon/fa75b62e-1382-43e3-adf0-3853f2bf7038">
-						<Button
-							h={{ base: "2.5rem", lg: "3.5rem" }}
-							fontSize={{ base: "1rem", md: "1.1rem", lg: "1.3rem" }}
-							border="1px solid white"
-							fontWeight="normal"
-							_hover={{
-								bgColor: "none",
-							}}
-							w={{ base: "15rem", md: "18rem", lg: "20rem" }}
-							bgColor="#5e5e5e">
-							Appointment Enquiry
-						</Button>
-					</LinkItem>
+					<Box my="1.5rem" color="white" mx="auto">
+						<NavLinkItem url="/book-appointment">
+							<Button
+								h={{ base: "2.5rem", lg: "3.5rem" }}
+								fontSize={{ base: "1rem", md: "1.1rem", lg: "1.3rem" }}
+								border="1px solid white"
+								fontWeight="normal"
+								color="white"
+								_hover={{
+									bgColor: "none",
+								}}
+								w={{ base: "15rem", md: "18rem", lg: "20rem" }}
+								bgColor="#5e5e5e">
+								Appointment Enquiry
+							</Button>
+						</NavLinkItem>
+					</Box>
 				</Flex>
 			</Flex>
 			<Flex

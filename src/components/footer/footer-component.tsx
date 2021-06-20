@@ -159,9 +159,9 @@ const Footer = () => {
 						<Text>
 							Copyright © 2011-21{" "}
 							<Box as="span" fontWeight="bold">
-								Park Row Hair & Beauty
+								Flapex Beauty
 							</Box>{" "}
-							| Company No. 07795305 | Website by{" "}
+							| Company No. +234 818 005 5097 | Website by{" "}
 							<Box as="span" fontWeight="bold">
 								Customology
 							</Box>

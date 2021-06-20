@@ -32,7 +32,7 @@ const WelcomeNote = () => {
 				<Text>
 					Welcome to{" "}
 					<Box fontWeight="bold" as="span" color={COLORS.PRIMARY_COLOR}>
-						Park Row Hair & Beauty…
+						Flapex Beauty…
 					</Box>{" "}
 					a contemporary and professional, yet warm and friendly salon in the
 					heart of Brighouse.

@@ -44,7 +44,7 @@ const HeaderContent = () => {
 					fontStyle="italic"
 					px="0.5rem"
 					fontSize={{ base: "1rem", md: "1.2rem" }}>
-					01484 722220
+					+234 818 005 5097
 				</Text>
 			</Flex>
 			<Flex
@@ -55,7 +55,13 @@ const HeaderContent = () => {
 				px={{ base: "5%", xl: "10%" }}
 				py={{ base: "0.5rem", lg: "1rem" }}>
 				<Flex w={{ base: "40%", md: "30%", lg: "20%" }}>
-					<Image src={Logo} w="100%" h={{ base: "3rem", lg: "4rem" }} />
+					<NavLinkItem
+						_hover={{
+							bgColor: "none",
+						}}		
+						url="/">
+						<Image src={Logo} w="100%" h={{ base: "3rem", lg: "4rem" }} />
+					</NavLinkItem>
 				</Flex>
 				<Box display={{ base: "flex", lg: "none" }}>
 					<HamburgerIcon as="button" w={8} h={8} onClick={onOpen} />
@@ -69,14 +75,20 @@ const HeaderContent = () => {
 									}}
 								/>
 								<DrawerBody px="0" pt="3rem">
-									<Image
-										src={Logo}
-										alt="logo"
-										h="3rem"
-										w="6rem"
-										mb="1rem"
-										ml="2rem"
-									/>
+									<NavLinkItem
+										_hover={{
+											bgColor: "none",
+										}}		
+										url="/">
+											<Image
+												src={Logo}
+												alt="logo"
+												h="3rem"
+												w="6rem"
+												mb="1rem"
+												ml="2rem"
+											/>
+									</NavLinkItem>
 									<List>
 										<Divider my="0.5rem" />
 										{completeHeaderLinksData.map((headerLink: any) => {

@@ -28,7 +28,7 @@ const AboutYou = () => {
 				<Text>
 					At{" "}
 					<Box fontWeight="bold" as="span" color={COLORS.PRIMARY_COLOR}>
-						Park Row Hair & Beauty…
+						Flapex Beauty…
 					</Box>{" "}
 					it’s all about you…
 				</Text>
@@ -49,7 +49,7 @@ const AboutYou = () => {
 				<Text>That’s what a great haircut should do.</Text>
 				<Text>
 					<Box as="span" fontWeight="bold">
-						Call us now on 01484 722220
+						Call us now on +234 818 005 5097
 					</Box>{" "}
 					to book an appointment – or if you prefer, we’d love to offer a{" "}
 					<Box as="span" fontWeight="bold">
